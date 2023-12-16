@@ -32,6 +32,12 @@
   url = "https://www.buymeacoffee.com/bjtn"
   weight = 40
 
+[[main]]
+  identifier = "linkedin"
+  pre = "linkedin"
+  url = "https://www.linkedin.com/in/brandon-jose-tenorio-noguera/"
+  weight = 50
+
 #[[main]]
 #  name = "Parent"
 #  weight = 20
