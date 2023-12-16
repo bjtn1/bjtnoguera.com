@@ -13,17 +13,24 @@
 [[main]]
  name = "Notes"
  pageRef = "notes"
- weight = 1
+ weight = 10
 
 [[main]]
  name = "Projects"
  pageRef = "projects"
- weight = 1
+ weight = 20
 
 [[main]]
-  # name = "GitHub"
+  identifier = "github"
   pre = "github"
   url = "https://github.com/bjtn1"
+  weight = 30
+
+[[main]]
+  identifier = "buymeacoffee"
+  pre = "mug-hot"
+  url = "https://www.buymeacoffee.com/bjtn"
+  weight = 40
 
 #[[main]]
 #  name = "Parent"
