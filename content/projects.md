@@ -1,8 +1,7 @@
-+++
-title = 'Projects'
-date = 2023-12-16T04:21:38-05:00
-draft = true
-+++
+---
+title: 'Projects'
+date: 2023-12-16T04:21:38-05:00
+---
 
 Hey
 go here to learn more https://blowfish.page/docs/shortcodes/#gitlab-card
