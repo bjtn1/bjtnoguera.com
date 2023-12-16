@@ -21,11 +21,6 @@
  weight = 10
 
 [[main]]
-  name = "About"
-  pageRef = "about"
-  weight = 10
-
-[[main]]
   identifier = "github"
   pre = "github"
   url = "https://github.com/bjtn1"
