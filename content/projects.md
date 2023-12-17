@@ -4,7 +4,8 @@ date: 2023-12-16T04:21:38-05:00
 ---
 
 These are some of my projects:
-![under-construction](under-construction.png)
+
+![test](/under_construction.png)
 <!-- Hey -->
 <!-- go here to learn more https://blowfish.page/docs/shortcodes/#gitlab-card -->
 <!---->
