@@ -1,0 +1,57 @@
+{{ define "main" }}
+  <style>
+    h1 {
+      font-size: 2.25rem; /* 20px */
+      line-height: 2.5rem; /* 28px */
+      font-weight: 600;
+    }
+    .main-container {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-top: 10vh;
+    }
+    .page-box {
+      transition: transform 0.3s ease-in-out;
+      align-self: center;
+    }
+
+    .page-box:hover {
+      transform: scale(1.25);
+    }
+  </style>
+  
+  <div class="main-container">
+    {{ range.Pages.ByTitle }}
+      <div class="page-box">
+        <a href="{{ .RelPermalink }}">
+          <h1>
+            {{ .Title }}
+          </h1> 
+        </a>
+      </div>
+    {{ end  }}
+  </div>
+  <!-- <section class="mt-8 flex flex-wrap"> -->
+  <!--   {{ range .Pages }} -->
+  <!--     <article class="pb-6 flex-shrink-0 w-full md:w-1/2 lg:w-1/3 xl:w-1/4 page-box"> -->
+  <!--       <a class="flex" href="{{ .Params.externalUrl }}"> -->
+  <!--         <div class="mr-3 text-3xl text-neutral-300"> -->
+  <!--           <span class="relative inline-block align-text-bottom"> -->
+  <!--             {{ partial "icon.html" .Params.icon }} -->
+  <!--           </span> -->
+  <!--         </div> -->
+  <!--         <div> -->
+  <!--           <h3 class="flex text-xl font-semibold"> -->
+  <!--             {{ .Title }} -->
+  <!--           </h3> -->
+  <!--           <p class="text-sm text-neutral-400"> -->
+  <!--             {{ .Description }} -->
+  <!--           </p> -->
+  <!--         </div> -->
+  <!--       </a> -->
+  <!--     </article> -->
+  <!--   {{ end }} -->
+  <!-- </section> -->
+{{ end }}

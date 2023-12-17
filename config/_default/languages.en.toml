@@ -1,7 +1,7 @@
 languageCode = "en"
 languageName = "English"
 weight = 1
-title = "Brandon Jose Tenorio Noguera"
+title = "Brandon J. T. Noguera"
 
 [params]
   displayName = "EN"
@@ -16,8 +16,8 @@ title = "Brandon Jose Tenorio Noguera"
 [author]
   name = "Brandon Jose Tenorio Noguera"
 #   image = "img/blowfish_logo.png"
-  headline = "Idk what to write here"
-#   bio = "A little bit about you"
+  headline = "I don't know what to write here"
+  # bio = "Welcome to my website! I'm glad you made it here (: In here I display the notes I've taken and the projects I've worked on. Feel free to contact me!"
   links = [
     { at-sign = "mailto:brandonjtnoguera@gmail.com" },
 #     { link = "https://link-to-some-website.com/" },
