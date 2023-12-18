@@ -7,11 +7,11 @@
     padding-top: 0.125rem; /* 8px */
     padding-bottom: 0.125rem; /* 8px */
   }
-  .main-container {
+  .main-box {
+    height: 34rem; /* 544px */
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    justify-content: center;
     margin-top: 10vh;
   }
   .page-box {
@@ -26,7 +26,7 @@
   }
 </style>
 
-<div class="main-container">
+<div class="main-box">
   {{ range.Pages.ByTitle }}
     <div class="page-box">
       <a href="{{ .RelPermalink }}">
