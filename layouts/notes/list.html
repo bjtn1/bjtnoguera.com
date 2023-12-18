@@ -4,26 +4,21 @@
     font-size: 2.25rem; /* 20px */
     line-height: 2.5rem; /* 28px */
     font-weight: 600;
-    padding-top: 0.125rem; /* 8px */
-    padding-bottom: 0.125rem; /* 8px */
   }
   .main-box {
-    height: 34rem; /* 544px */
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
     margin-top: 10vh;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, auto));
   }
+
   .page-box {
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    transition-duration: 500ms;
-    padding-top: 0.125rem; /* 2px */
-    padding-bottom: 0.125rem; /* 2px */
+    transition-duration: 250ms;
   }
 
   .page-box:hover {
     transform: scale(1.05);
-  }
+    text-decoration: underline;}
 </style>
 
 <div class="main-box">
