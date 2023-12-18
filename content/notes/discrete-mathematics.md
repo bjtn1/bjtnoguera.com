@@ -7,5 +7,5 @@ draft: true
 - [Link to pdf]()
 - [Link to tex]() (Optional)
 
-# Course Description
+## Course Description
 
