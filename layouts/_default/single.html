@@ -1,0 +1,24 @@
+{{ define "main" }}
+<!--
+This is the default layout used for single/leaf pages
+
+Single/leaf pages come in one of 2 ways:
+
+- A folder with an `index.md` file and any other supplementary files inside
+- i.e:
+  - `./content/about/index.md`
+  - the url would point to "base_url/about/"
+  - the content of the page would point to `./content/about/about.md`
+  - `index.md` tells the hugo genie that this is a leaf/single page
+
+- A single .md file
+- i.e:
+  - `./content/about.md`
+  - the url would point to "base_url/about/"
+  - the content of the page would point to `./content/about.md`
+-->
+  <main class="container prose dark:prose-invert p-8">
+    {{/*  <h1 class="gradient-text">{{ .Title }}</h1>   */}}
+    {{ .Content }}
+  </main>
+{{ end }}
