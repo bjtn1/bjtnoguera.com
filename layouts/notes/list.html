@@ -1,38 +1,45 @@
 {{ define "main" }}
-  <style>
-    h1 {
-      font-size: 2.25rem; /* 20px */
-      line-height: 2.5rem; /* 28px */
-      font-weight: 600;
-      padding-top: 0.125rem; /* 8px */
-      padding-bottom: 0.125rem; /* 8px */
-    }
-    .main-container {
-      display: flex;
-      flex-direction: column;
-      flex-wrap: wrap;
-      justify-content: center;
-      margin-top: 10vh;
-    }
-    .page-box {
-      transition: transform 0.4s ease-in-out;
-      align-self: center;
-    }
+<!--
+This is the default layout used for list pages
 
-    .page-box:hover {
-      transform: scale(1.25);
-    }
-  </style>
-  
-  <div class="main-container">
-    {{ range.Pages.ByTitle }}
-      <div class="page-box">
-        <a href="{{ .RelPermalink }}">
-          <h1>
-            {{ .Title }}
-          </h1> 
-        </a>
-      </div>
-    {{ end  }}
-  </div>
+List pages are folders containing the `_index.md` file and a bunch of other .md files inside it
+Example:
+./content/notes/_index.md
+
+is a leaf page
+-->
+<style>
+  h1 {
+    font-size: 2.25rem; /* 20px */
+    line-height: 2.5rem; /* 28px */
+    font-weight: 600;
+  }
+  .main-box {
+    margin-top: 10vh;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, auto));
+  }
+
+  .page-box {
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 250ms;
+  }
+
+  .page-box:hover {
+    transform: scale(1.05);
+    text-decoration: underline;
+  }
+</style>
+
+<div class="main-box">
+  {{ range.Pages.ByTitle }}
+    <div class="page-box">
+      <a href="{{ .RelPermalink }}">
+        <h1>
+          {{ .Title }}
+        </h1> 
+      </a>
+    </div>
+  {{ end  }}
+</div>
 {{ end }}

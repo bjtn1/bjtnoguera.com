@@ -1,0 +1,32 @@
+{{ define "main" }}
+<!--
+NOTE
+This was (mostly) taken from
+https://github.com/fireship-io/fireship.io/blob/master/layouts/404.html
+:-->
+
+<style>
+  .home {
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 250ms;
+  }
+
+  .home:hover {
+    transform: scale(1.05);
+    text-decoration: underline;
+  }
+</style>
+
+<main class="prose dark:prose-invert min-w-full text-center">
+  <h1 class="text-5xl mt-12">404 Not Found</h1>
+  <p>Yay! You found the blinking cat!</p>
+  <a class="home" href="/">Go Home</a>
+
+  {{ $image := resources.Get "images/plink.gif" }}
+  {{ $image := $image.Fit "600x400" }}
+  {{ with $image }}
+    <img class="mx-auto" alt="plinking cat" src="{{ .RelPermalink }}" width="{{ .Width }}" height="{{ .Height }}">
+  {{ end }}
+</main>
+
+{{ end }}

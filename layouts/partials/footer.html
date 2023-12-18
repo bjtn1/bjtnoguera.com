@@ -1,0 +1,43 @@
+<style>
+footer {
+  text-align: center;
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem; 
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  color: rgb(163 163 163);
+}
+
+.foot-link {
+  text-decoration: underline;
+}
+
+hr {
+  border: none;
+  border-top: 1px solid rgb(163, 163, 163);
+  margin: 20px 0; /* Optional: Adjust the margin as needed */
+
+}
+</style>
+
+<footer>
+  <div class="text-xs">
+  <!--
+  NOTE
+  Uncomment this for the scroll to top button
+  -->
+  <!--     <a href="#the-top" -->
+  <!--   class="pointer-events-auto sticky top-[calc(100vh-5.5rem)] flex h-12 w-12 mb-16 items-center justify-center rounded-full bg-neutral/50 text-xl text-neutral-700 backdrop-blur hover:text-primary-600 dark:bg-neutral-800/50 dark:text-neutral dark:hover:text-primary-400" -->
+  <!--   aria-label="{{ i18n "nav.scroll_to_top_title" }}" title="{{ i18n "nav.scroll_to_top_title" }}"> -->
+  <!--   &uarr; -->
+  <!-- </a> -->
+
+    <hr>
+    <div class="mx-auto w-24 h-1 my-12 rounded-full"></div>
+    Copyright ©  {{ now.Format "2006" }} {{ .Site.Author.name }} <br> 
+    Built with
+    <a class="foot-link" href="https://gohugo.io/" target="_blank" rel="noopener noreferrer">Hugo</a> 
+    and 
+    <a class="foot-link" href="https://blowfish.page/" target="_blank" rel="noopener noreferrer">Blowfish</a>
+  </div>
+</footer>
