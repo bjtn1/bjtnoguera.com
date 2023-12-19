@@ -1,0 +1,14 @@
+<!--
+Got most of this info in:
+https://gohugo.io/templates/lookup-order/
+
+This is where you would change the layout of ./content/about.md
+Any .md file at the root level of content uses the "page" layout
+What this means is I can add a template in ./layouts/page/single.html and any .md file at the root level of ./content/
+will use that template
+
+If I made a .md file for contacting me and I wanted it to have a different template than ./layouts/page/single.html,
+I would target the ./content/contact.md page by:
+1) Adding `layout: contact` to the front matter (assuming yaml format) (look up `hugo front matter` for available formats)
+2) Creating `./layouts/page/contact.html` where I would style contact.md
+-->

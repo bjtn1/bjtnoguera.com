@@ -27,13 +27,39 @@ where `.` is the path to the folder where the hugo website lives
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Brandon J. T. Noguera</title>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>
+      {{ block "title" . }}
+        {{ .Site.Title }}
+      {{ end }}
+    </title>
     <link href="{{ .Site.BaseURL }}tailwindcss.css" rel="stylesheet">
   </head>
+
   <body class="bg-black">
-    <h1 class="prose text-white">HEYYYYY</h1>
+    TOP OF BASEOF
+    <hr>
+    {{ block "header" . }}
+      <!--
+      navbar content that every page shares goes here:
+      this "header" should be imported from ./layouts/partials/header.html
+      -->
+    {{ end }}
+
+    {{ block "main" . }}
+      <!-- 
+      main content from each page goes here 
+      should be imported from ??? idk yet 
+      -->
+    {{ end }}
+
+    {{ block "footer" . }}
+      <!-- 
+      footer content that every page shares goes here 
+      should be imported from ./layouts/partials/footer.html
+      -->
+    {{ end }}
+    <hr>
+    BOTTOM OF BASEOF
   </body>
 </html>
-
