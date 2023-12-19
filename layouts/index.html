@@ -1,1 +1,39 @@
-<h1>HEYYYYY</h1>
+<!--
+Several things happening here.
+We're using tailwindcss, which means that we need to run:
+`npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch`
+and
+`hugo server -D`
+Simultaneously to get LiveReload and see changes as we make them
+
+About tailwindcss command from above:
+This command outputs to `./static/dist/output.css` which is fine, but you can change that to whatever
+
+Remember, hugo expects custom css to be in `./static`, so make sure the tailwindcss
+output is somewhere in static
+
+To access the path to the tailwindcss file (or any file in `./static/`) do:
+`href="{{ .Site.BaseURL }}dist/output.css"`
+
+Explanation:
+`{{ .Site.BaseURL }}` returns the path to `static/` exactl as I've just typed it.
+The full href comman from above would be equal to:
+`href="./static/dist/output.css"`
+where `.` is the path to the folder where the hugo website lives
+
+
+`./layouts/_default/index.html` seems to be the landing page html for our site
+-->
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Brandon J. T. Noguera</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="{{ .Site.BaseURL }}tailwindcss.css" rel="stylesheet">
+  </head>
+  <body class="bg-black">
+    <h1 class="prose text-white">HEYYYYY</h1>
+  </body>
+</html>
+
