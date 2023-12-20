@@ -1,0 +1,45 @@
+{{ define "main" }}
+<!--
+This is the default layout used for list pages
+
+List pages are folders containing the `_index.md` file and a bunch of other .md files inside it
+Example:
+./content/notes/_index.md
+
+is a leaf page
+-->
+<style>
+  h1 {
+    font-size: 2.25rem; /* 20px */
+    line-height: 2.5rem; /* 28px */
+    font-weight: 600;
+  }
+  .main-box {
+    margin-top: 10vh;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, auto));
+  }
+
+  .page-box {
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 250ms;
+  }
+
+  .page-box:hover {
+    transform: scale(1.05);
+    text-decoration: underline;
+  }
+</style>
+
+<div class="grid grid-cols-2 mt-6">
+  {{ range.Pages.ByTitle }}
+    <div class="ease-in-out duration-300 hover:scale-105 hover:underline">
+      <a href="{{ .RelPermalink }}">
+        <h1 class="text-4xl font-semibold">
+          {{ .Title }}
+        </h1> 
+      </a>
+    </div>
+  {{ end  }}
+</div>
+{{ end }}
