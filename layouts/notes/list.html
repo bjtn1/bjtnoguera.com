@@ -8,11 +8,11 @@ Example:
 
 is a leaf page
 -->
-<div class="grid grid-cols-2 mt-6">
+<div>
   {{ range.Pages.ByTitle }}
-    <div class="ease-in-out duration-300 hover:scale-105 hover:underline">
+    <div>
       <a href="{{ .RelPermalink }}">
-        <h1 class="text-4xl font-semibold">
+        <h1>
           {{ .Title }}
         </h1> 
       </a>
