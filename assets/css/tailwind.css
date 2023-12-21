@@ -556,6 +556,11 @@ video {
   grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
+.bg-black {
+  --tw-bg-opacity: 1;
+  background-color: rgb(22 22 30 / var(--tw-bg-opacity));
+}
+
 .text-4xl {
   font-size: 2.25rem;
   line-height: 2.5rem;
