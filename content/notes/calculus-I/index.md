@@ -4,7 +4,7 @@ title: "Calculus I"
 draft: true
 ---
 
-- [Link to pdf]()
+- [Link to pdf](./emp-lecture.pdf) courtesy of [Elijan Mastnak](https://www.ejmastnak.com/)
 
 ## Course Description
 

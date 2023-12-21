@@ -1,0 +1,18 @@
+<!--
+Code taken from https://digitaldrummerj.me/hugo-links-to-other-pages/
+It enables opening links in new tabs
+Only links that start with "http", ".", "/", "https", or "www" will be opened in new tabs
+-->
+<a
+  href="{{ .Destination | safeURL }}"
+  {{ with .Title}}
+    title="{{ . }}"
+  {{ end }}
+
+  {{ if or (strings.HasPrefix .Destination "http") (strings.HasPrefix .Destination "https") (strings.HasPrefix .Destination ".") (strings.HasPrefix .Destination "/") }} 
+  target="_blank"
+  {{ end }}
+  rel="noopener noreferrer"
+>
+  {{ .Text | safeHTML }}
+</a>
