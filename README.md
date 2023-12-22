@@ -24,3 +24,4 @@ TODO
 # Software and pages that were incredibly useful (in no particular order)
 - https://deeditor.com/
 - https://www.svgrepo.com/
+- The entire tailwindcss documentation https://tailwindcss.com/docs/installation
