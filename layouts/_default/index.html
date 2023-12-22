@@ -27,6 +27,8 @@ Make sure to put comment inside main
         {{ $coffee_svg := $coffee.RelPermalink }}
         {{ $at := resources.Get "icons/atsign.svg" }}
         {{ $at_svg := $at.RelPermalink }}
+        {{ $linkedin := resources.Get "icons/linked-in.svg" }}
+        {{ $linkedin_svg := $linkedin.RelPermalink }}
         <div>
           <a href="https://github.com/bjtn1" target="_blank" rel="noopener noreferrer"><img class="hover:scale-105" src="{{ $github_svg }}" alt="Github logo" width="50px" height="50"></a>
         </div>
@@ -35,6 +37,9 @@ Make sure to put comment inside main
         </div>
         <div>
           <a href="mailto:brandonjtnoguera@gmail.com" target="_blank" rel="noopener noreferrer"><img class="hover:scale-105" src="{{ $at_svg }}"  width="50px" height="50" alt="Email me logo"></a>
+        </div>
+        <div>
+          <a href="https://www.linkedin.com/in/brandon-jose-tenorio-noguera/" target="_blank" rel="noopener noreferrer"><img class="hover:scale-105" src="{{ $linkedin_svg }}"  width="50px" height="50" alt="LinkedIn logo"></a>
         </div>
       </div>
     </div>
