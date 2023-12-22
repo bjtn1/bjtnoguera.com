@@ -8,18 +8,17 @@ Example:
 
 is a leaf page
 -->
-<header>
-  {{ partial "header.html" . }}
-</header>
-<div>
-  {{ range.Pages.ByTitle }}
+<div class="px-12 flex justify-center items-center" style="min-height: 85vh;">
+  <!--Hero section-->
+  <div class="flex flex-col pl-12 justify-center items-start w-2/3">
+    {{ range.Pages.ByTitle }}
     <div>
-      <a href="{{ .RelPermalink }}">
-        <h1>
-          {{ .Title }}
-        </h1> 
-      </a>
+      <a href="{{ .RelPermalink }}"><h1 class="text-7xl hover:text-blue hover:scale-105 duration-150 ease-in-out">{{ .Title }}</h1></a>
     </div>
-  {{ end  }}
+    {{ end }}
+  </div>
+
+  <!--Menu section to the right of hero section-->
+  {{ partial "not-home-menu.html" . }}
 </div>
 {{ end }}
