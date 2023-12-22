@@ -20,3 +20,7 @@ This compiles all the tailwindcss classes code from any and all html files into 
 
 TODO
 - [ ] Find a way to link tailwindcss to `./layouts/partials/head.html`'s link tag for css
+
+# Software and pages that were incredibly useful (in no particular order)
+- https://deeditor.com/
+- https://www.svgrepo.com/

@@ -15,13 +15,21 @@ Make sure to put comment inside main
     <div class="flex items-center gap-x-2">
       <h1 class="text-7xl" style="margin-top: -21px;">Noguera</h1>
 
-      <div class="text-white-50 flex justify-around" style="width: 383px;">
+      <div class="text-white-50 flex justify-around items-center" style="width: 383px;">
         {{ $github := resources.Get "icons/github.svg" }}
+        {{ $github_svg := $github.RelPermalink }}
+        {{ $coffee := resources.Get "icons/coffee.svg" }}
+        {{ $coffee_svg := $coffee.RelPermalink }}
+        {{ $at := resources.Get "icons/atsign.svg" }}
+        {{ $at_svg := $at.RelPermalink }}
         <div>
-          <img src="{{ $github }}">
+          <a href="https://github.com/bjtn1" target="_blank" rel="noopener noreferrer"><img class="hover:scale-105" src="{{ $github_svg }}" alt="Github logo" width="50px" height="50"></a>
         </div>
         <div>
-          BuyMeACoffee link
+          <a href="https://www.buymeacoffee.com/bjtn" target="_blank" rel="noopener noreferrer"><img class="hover:scale-105" src="{{ $coffee_svg}}" alt="BuyMeACoffee logo" width="50px" height="50"></a>
+        </div>
+        <div>
+          <a href="mailto:brandonjtnoguera@gmail.com" target="_blank" rel="noopener noreferrer"><img class="hover:scale-105" src="{{ $at_svg }}"  width="50px" height="50" alt="Email me logo"></a>
         </div>
       </div>
     </div>
