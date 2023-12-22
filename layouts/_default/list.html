@@ -1,5 +1,6 @@
 {{ define "main" }}
 <div class="px-12 flex justify-between items-center" style="min-height: 85vh;">
+  {{ partial "menu.html" . }}
   <div class="flex flex-col justify-center items-start">
     {{ range.Pages.ByTitle }}
     <div>
@@ -7,7 +8,5 @@
     </div>
     {{ end }}
   </div>
-
-  {{ partial "menu.html" . }}
 </div>
 {{ end }}

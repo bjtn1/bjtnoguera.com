@@ -1,12 +1,11 @@
 {{ define "main" }}
 <div class="px-12 flex justify-between items-center" style="min-height: 85vh;">
-  <div>TO DO ADD STICKY NAVBAR</div>
+  {{ partial "menu.html" . }}
   <div class="flex flex-col justify-center items-start text-left">
-    <div>
+    <div class="text-white">
       {{ .Content }}
     </div>
   </div>
-
-  {{ partial "menu.html" . }}
+  <div>TO DO ADD STICKY NAVBAR</div>
 </div>
 {{ end }}
