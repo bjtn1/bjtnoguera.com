@@ -1,12 +1,35 @@
 ---
 title: 'About'
 date: 2023-12-20T20:59:48-05:00
-draft: true
+draft: false
 ---
 # Hello!
+This is a very important message very very importnat the quick brown fox jumps over the lazy dog
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+## Believe it or not
+This is a second message that is almost as important as the last one, but it's in an h2 tag so it is obviously less important
+
+### Now we're diving deeper into what an important message truly is
+Who defines what is important or not? I think apples are important, but my neighbor Demarcus thinks oranges are more important! What a connundrum this is
+
+## Math
+To calculate the importance of apples we simply need to calculate and derive the Lagrange of the real number line defined as
+
+$$\sum_{i=1}^n n = \frac{n (n+1)}{2}$$
+
+## Takeaways and Todos
+### Takeaways
+- Math doesn't seem to work/get rendered in single pages, do I need to use KaTeX?
+- As long as any one sentence isn't hundred of characters long, the menu on the left should stay exactly where it should be
+    - Perhaps I should loook into setting the position of that menu as an absolute since I actually like that it stays in the same
+    position in every page
+## TODOS
+- [ ] How to get math to render in html? (Do I need to install and download KaTeX?)
+- [ ] Get menu to stay in the left side position that it currently is for every page (position: absolute?)
+- [ ] Look into how to get the middle section of single pages to be scrollable, but the left and right section stay in place
+- [ ] Create and style a right menu for single pages where the headings of the current page will be linked (like that thing docusaurus and hugo do)
+- [x] The tailwindcss trick to get change prose colors doesn't seem to work, figure out why and how to fix it
+- [ ] Integrate [pagefind](https://pagefind.app/docs/) into the search bar
+- [ ] Also noticing that the footer seems to be stuck to the bottom of single pages, figure out a better way to get the footer to cooperate and stay where
+it should be
+- [ ] Look into allowing users to turn off the moving linear gradient I added (turning it off means they would see the tokyongiht bakground I had before)
