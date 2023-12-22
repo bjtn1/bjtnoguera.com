@@ -7,6 +7,37 @@
     <!--   {{ partial "header.html" . }} -->
     <!-- </header> -->
 
+    <!--This beautiful gradient is a modification of this snippet by Manuel Pinto-->
+    <!--https://codepen.io/P1N2O/pen/pyBNzX-->
+    <style>
+      body {
+        background: linear-gradient(
+          -45deg,
+          #357266,
+          #16161e,
+          #2e2e2e,
+          #004953,
+          #4d0026,
+          #3d550c
+          );
+        background-size: 600% 600%;
+        animation: gradient 15s ease infinite;
+        height: 100vh;
+      }
+
+      @keyframes gradient {
+        0% {
+          background-position: 0% 50%;
+        }
+        50% {
+          background-position: 100% 50%;
+        }
+        100% {
+          background-position: 0% 50%;
+        }
+      }
+    </style>
+
     <main>
       {{ block "main" . }} {{ end }}
     </main>
