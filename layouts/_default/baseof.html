@@ -3,9 +3,9 @@
   {{ partial "head.html" . }}
   <body class="bg-black text-white">
     <!--Currently using the menu partial for site navigation, might repurpose header.html for a searchbar-->
-    <!-- <header> -->
-    <!--   {{ partial "header.html" . }} -->
-    <!-- </header> -->
+    <header>
+      {{ partial "header.html" . }}
+    </header>
 
     <main>
       {{ block "main" . }} {{ end }}
