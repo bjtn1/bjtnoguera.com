@@ -8,6 +8,9 @@ Example:
 
 is a leaf page
 -->
+<header>
+  {{ partial "header.html" . }}
+</header>
 <div>
   {{ range.Pages.ByTitle }}
     <div>

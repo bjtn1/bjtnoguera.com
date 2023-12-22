@@ -2,9 +2,10 @@
 <html lang="{{ site.LanguageCode }}">
   {{ partial "head.html" . }}
   <body class="bg-black text-white">
-    <header>
-      {{ partial "header.html" . }}
-    </header>
+    <!--Uncomment and add this piece of code to every html page that isnt the homepage (I don't think the homepage needs the header)-->
+    <!-- <header> -->
+    <!--   {{ partial "header.html" . }} -->
+    <!-- </header> -->
 
     <main>
       {{ block "main" . }} {{ end }}
