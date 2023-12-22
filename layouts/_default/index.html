@@ -9,9 +9,22 @@ Make sure to put comment inside main
 <div class="px-12 flex justify-center items-center" style="min-height: 85vh;">
   <!--I know that I want to add a gap between h1 tag and the other two tags in here, but I don't know -->
   <div class="flex flex-col pl-12 justify-center items-start w-2/3">
-    <h1 class="text-7xl">Brandon Jose Tenorio</h1>
-    <h1 class="text-7xl" style="margin-top: -21px;">Noguera</h1>
-    <div class="text-white-50">Links would go here</div>
+    <div>
+      <h1 class="text-7xl">Brandon Jose Tenorio</h1>
+    </div>
+    <div class="flex items-center gap-x-2">
+      <h1 class="text-7xl" style="margin-top: -21px;">Noguera</h1>
+
+      <div class="text-white-50 flex justify-around" style="width: 383px;">
+        {{ $github := resources.Get "icons/github.svg" }}
+        <div>
+          <img src="{{ $github }}">
+        </div>
+        <div>
+          BuyMeACoffee link
+        </div>
+      </div>
+    </div>
   </div>
 
   <div class="text-7xl flex flex-col w-1/3">
