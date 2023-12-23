@@ -25,3 +25,4 @@ TODO
 - https://deeditor.com/
 - https://www.svgrepo.com/
 - The entire tailwindcss documentation https://tailwindcss.com/docs/installation
+- https://github.com/ejmastnak/ejmastnak.com
