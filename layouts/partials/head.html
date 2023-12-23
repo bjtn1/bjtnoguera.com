@@ -5,6 +5,7 @@
   <title>{{ .Title }}</title>
   {{ $style := resources.Get "css/tailwind.css" }}
   <link href="{{ $style.Permalink }}" rel="stylesheet">
+
   {{ partial "linear-gradient-bg.html" . }}
   <style>
     a:hover {

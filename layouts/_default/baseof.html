@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="{{ site.LanguageCode }}">
   {{ partial "head.html" . }}
-  <body class="bg-black text-white">
+  <body class="bg-black text-white flex flex-col justify-between">
     <header>
       {{ partial "header.html" . }}
     </header>
 
-    <main>
+    <main style="flex: 1; max-height: 630px;">
       {{ block "main" . }} {{ end }}
     </main>
 
