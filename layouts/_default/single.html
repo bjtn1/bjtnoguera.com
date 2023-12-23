@@ -1,5 +1,5 @@
 {{ define "main" }}
-<div class="px-12 flex items-center w-full h-full">
+<div class="px-12 flex justify-between items-center w-full h-full">
   <!--Left menu section-->
   {{ partial "menu.html" . }}
 
@@ -12,5 +12,7 @@
     ">
     {{ .Content }}
   </div>
+
+  {{ partial "toc-navbar.html" . }}
 </div>
 {{ end }}
