@@ -1,5 +1,5 @@
 {{ define "main" }}
-<div class="px-12 flex justify-between items-center" style="min-height: 85vh;">
+<div class="px-12 grid w-full h-full" style="grid-template-columns: 1fr 2fr;">
   {{ partial "menu.html" . }}
   <div class="flex flex-col justify-center items-start">
     {{ range.Pages.ByTitle }}

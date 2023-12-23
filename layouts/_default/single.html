@@ -1,5 +1,5 @@
 {{ define "main" }}
-<div class="px-12 grid w-full h-full" style="grid-template-columns: 1fr 2fr 1fr;">
+<div class="px-12 grid w-full h-full" style="grid-template-columns: 1fr 1fr;">
   <!--Left menu section-->
   {{ partial "menu.html" . }}
 
@@ -15,8 +15,5 @@
       {{ .Content }}
     </div>
   </div>
-
-  <!--Right section: contains main content's toc-->
-  {{ partial "toc-navbar.html" . }}
 </div>
 {{ end }}
