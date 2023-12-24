@@ -109,6 +109,7 @@ git switch main
 
 <!-- TOC --><a name="todos"></a>
 # TODOs
+- [ ] Consider adding scrollbar (maybe also toc-navbar?) to list pages layout
 - [ ] Add a bit more information on how i take notes with neovim [Information about my note-taking worflow](#information-about-my-note-taking-worflow)
 - [ ] How to get math to render in html? (Do I need to install and download KaTeX?)
 - [ ] Integrate [pagefind](https://pagefind.app/docs/) into the search bar
