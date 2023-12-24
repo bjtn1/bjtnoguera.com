@@ -49,7 +49,9 @@ I write these for myself because I tend to forget things.
 
 <!-- TOC --><a name="dev-branch"></a>
 ## `dev` branch
-`dev` is the branch in which I develop enhancements and fix bugs for the site. `dev`'s baseURL should always be set to `example.com` or whatever the default is whenever you run `hugo new site ...`
+`dev` is the branch in which I develop enhancements and fix bugs for the site.
+
+`dev`'s baseURL should always be set to `example.com` or whatever the default is whenever you run `hugo new site ...`
 <!-- TOC --><a name="steps-for-dev-branch"></a>
 ### Steps for `dev` branch
 1. Make sure to have 3 terminal tabs open or panes if you're using [tmux](https://github.com/tmux/tmux/wiki)
