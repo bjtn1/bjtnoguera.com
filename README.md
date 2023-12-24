@@ -34,13 +34,13 @@ TODO: Add a bit more information on how i take notes with neovim
 
 <!-- TOC --><a name="special-thanks-and-acknowledgments"></a>
 # Special thanks and acknowledgments
-Special thanks to [Elijan J. Mastnak](https://www.ejmastnak.com/) and [his github page](https://github.com/ejmastnak) for his incredibly easy to understand [guide on using vim-tex, luasnip, and neovim for note taking](https://www.ejmastnak.com/tutorials/vim-latex/intro/) -- the repository for [his personal website](https://github.com/ejmastnak/ejmastnak.com) was incredibly useful in understanding how to set up my own Hugo site.
+Special thanks to [Elijan J. Mastnak](https://www.ejmastnak.com/) for his incredibly easy to understand [guide on using vim-tex, luasnip, and neovim for note taking](https://www.ejmastnak.com/tutorials/vim-latex/intro/) -- the repository for [his personal website](https://github.com/ejmastnak/ejmastnak.com) was also incredibly useful in understanding how to set up my own Hugo site.
 
 <!-- TOC --><a name="software-and-pages-that-were-incredibly-useful"></a>
 # Software and pages that were incredibly useful
 In no particular order...
 - https://deeditor.com/ for re-coloring all the `.svg` logos/icons you see in the homepage
-- https://www.svgrepo.com/ for all the `.svg` files you see in the homepage
+- https://www.svgrepo.com/ for all the `.svg` icons/logos you see in the homepage
 - The entire [tailwindcss documentation](https://tailwindcss.com/docs/installation)
 
 <!-- TOC --><a name="workflows"></a>
