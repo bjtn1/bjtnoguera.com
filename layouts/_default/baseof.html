@@ -11,7 +11,6 @@
     {{ partial "bg-linear-gradient.html" . }}
 
     <style>
-      /* * {outline: 1px solid white;} */
 
       a:hover {
         color: #82aaff;
@@ -110,8 +109,8 @@
 
     <main class="
       flex-1
-      max-h-full
       "
+      style="max-height: 80vh;"
     >
       {{ block "main" . }} {{ end }}
     </main>
