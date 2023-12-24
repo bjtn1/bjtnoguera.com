@@ -1,5 +1,5 @@
 <!-- TOC start (generated with https://github.com/derlin/bitdowntoc) -->
-
+# Table Of Contents
 - [Motivations for the site](#motivations-for-the-site)
 - [Information about the site](#information-about-the-site)
 - [Information about my note-taking worflow](#information-about-my-note-taking-worflow)
@@ -17,11 +17,15 @@
 
 <!-- TOC --><a name="motivations-for-the-site"></a>
 # Motivations for the site
-I wanted a website not only to display my projects, but also to store all my notes and share them with other people. As my graduation approaches, I realize that I have a lot of gaps in my knowledge, so a majority of the notes are from revisited topics/courses from school that I made in order to fill in those gaps.
+I wanted a website not only to display my projects, but also to store all my notes and share them with other people.
+
+As my graduation approaches, I realize that I have a lot of gaps in my knowledge, so a majority of the notes are from revisited topics/courses from school that I made in order to fill in those gaps.
 
 <!-- TOC --><a name="information-about-the-site"></a>
 # Information about the site
-The site was built using [Hugo](https://gohugo.io/) and [tailwindcss](https://tailwindcss.com/). Although most of the site was coded by me, I drew inspiration from several sources for things like the [linear gradient background](https://github.com/bjtn1/bjtnoguera/blob/main/layouts/partials/bg-linear-gradient.html), which are all properly credited in the appropriate file(s) in which they were used.
+The site was built using [Hugo](https://gohugo.io/) and [tailwindcss](https://tailwindcss.com/).
+
+Although most of the site was coded by me, I drew inspiration from several sources for things like the [linear gradient background](https://github.com/bjtn1/bjtnoguera/blob/main/layouts/partials/bg-linear-gradient.html), which are all properly credited in the appropriate file(s) in which they were used.
 
 <!-- TOC --><a name="information-about-my-note-taking-worflow"></a>
 # Information about my note-taking worflow
@@ -59,7 +63,7 @@ git switch dev
 ```console
 npx tailwindcss -i ./assets/css/style.css -o ./assets/css/tailwind.css --watch
 ```
-> 💡  This makes itso that any css changes you make while in `dev` will be visible immediately on the site
+> 💡  This makes i so that any css changes you make while in `dev` will be visible immediately on the site
 
 5. Run this command in a different pane
 ```console
@@ -72,7 +76,10 @@ hugo server -D
 
 <!-- TOC --><a name="main-branch"></a>
 ## `main` branch
-`main` is the branch in which I add my `.pdf` and `.tex` and `.md` files to. In other words, `main` is the "content" branch because only content-related changes go there.
+`main` is the branch in which I add my `.pdf` and `.tex` and `.md` files to.
+
+In other words, `main` is the "content" branch because only content-related changes go there.
+
 `main`'s baseURL should always be set to `https://bjtn1/github.io/bjtnoguera` for GitHub Actions to be able to deploy it and have all links work within the website
 
 <!-- TOC --><a name="steps-for-adding-new-notes-to-main-branch"></a>
@@ -100,7 +107,7 @@ git switch main
 
 <!-- TOC --><a name="todos"></a>
 # TODOs
-- [ ] Add a bit more information on how i take notes with neovim [Information about my note-taking workflow](#Information about my note-taking workflow)
+- [ ] Add a bit more information on how i take notes with neovim [Information about my note-taking worflow](#information-about-my-note-taking-worflow)
 - [ ] How to get math to render in html? (Do I need to install and download KaTeX?)
 - [ ] Integrate [pagefind](https://pagefind.app/docs/) into the search bar
 - [ ] Look into allowing users to turn off the moving linear gradient I added (turning it off means they would see the tokyongiht bakground I had before)
