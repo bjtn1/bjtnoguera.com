@@ -1,18 +1,18 @@
 {{ define "main" }}
 <div class="
-  flex
-  px-12
-  gap-7
-  h-full
+  xl:flex
+  xl:px-12
+  xl:gap-7
+  xl:h-full
   "
 >
   {{ partial "toc-navbar.html" . }}
   <!--Center section: contains main content-->
   <div class="
-    prose
-    prose-maincolors
-    overflow-y-scroll
-    max-w-full
+    xl:prose
+    xl:prose-maincolors
+    xl:overflow-y-scroll
+    xl:max-w-full
     "
   >
     {{ .Content }}

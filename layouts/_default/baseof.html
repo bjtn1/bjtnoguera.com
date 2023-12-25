@@ -19,86 +19,86 @@
 
 
   <body class="
-    text-white
-    h-screen
-    flex
-    flex-col
-    justify-between
+    xl:text-white
+    xl:h-screen
+    xl:flex
+    xl:flex-col
+    xl:justify-between
     "
   >
 
     <header class="
-      p-4
-      flex
-      justify-center
+      xl:p-4
+      xl:flex
+      xl:justify-center
       "
     >
       <div class="
-        px-4
-        max-w-fit
-        flex
-        justify-center
-        text-white
-        bg-search-bg
-        rounded-3xl 
-        border-solid
-        border-black
-        text-lg
+        xl:px-4
+        xl:max-w-fit
+        xl:flex
+        xl:justify-center
+        xl:text-white
+        xl:bg-search-bg
+        xl:rounded-3xl 
+        xl:border-solid
+        xl:border-black
+        xl:text-lg
         "
         style="border-color: rgba(255,255,255,.08)"
       >
         <!-- <input type="search" placeholder="Search..." class="border border-solid border-black"> -->
         <a href="{{ .Site.BaseURL }}about" class="
-          py-2
-          px-4
-          hover:text-blue
-          hover:scale-105
-          duration-150
-          ease-in-out
+          xl:py-2
+          xl:px-4
+          xl:hover:text-blue
+          xl:hover:scale-105
+          xl:duration-150
+          xl:ease-in-out
           "
         >
           About
         </a>
         <a href="{{ .Site.BaseURL }}" class="
-          py-2
-          px-4
-          hover:text-blue
-          hover:scale-105
-          duration-150
-          ease-in-out
+          xl:py-2
+          xl:px-4
+          xl:hover:text-blue
+          xl:hover:scale-105
+          xl:duration-150
+          xl:ease-in-out
           "
         >
           Home
         </a>
         <a href="{{ .Site.BaseURL }}notes" class="
-          py-2
-          px-4
-          hover:text-blue
-          hover:scale-105
-          duration-150
-          ease-in-out
+          xl:py-2
+          xl:px-4
+          xl:hover:text-blue
+          xl:hover:scale-105
+          xl:duration-150
+          xl:ease-in-out
           "
         >
           Notes
         </a>
         <a href="{{ .Site.BaseURL }}projects" class="
-          py-2
-          px-4
-          hover:text-blue
-          hover:scale-105
-          duration-150
-          ease-in-out
+          xl:py-2
+          xl:px-4
+          xl:hover:text-blue
+          xl:hover:scale-105
+          xl:duration-150
+          xl:ease-in-out
           "
         >
           Projects
         </a>
         <button class="
-          py-2
-          px-4
-          hover:text-blue
-          hover:scale-105
-          duration-150
-          ease-in-out
+          xl:py-2
+          xl:px-4
+          xl:hover:text-blue
+          xl:hover:scale-105
+          xl:duration-150
+          xl:ease-in-out
           "
         >
           Search
@@ -107,8 +107,8 @@
     </header>
 
     <main class="
-      flex-1
-      overflow-y-scroll
+      xl:flex-1
+      xl:overflow-y-scroll
       "
       style="max-height: 80vh;"
     >
@@ -116,19 +116,25 @@
     </main>
 
     <footer class="
-      w-full
+      xl:w-full
       ">
       <div class="
-        text-white-50
-        text-xs
-        text-center
-        py-6
+        xl:text-white-50
+        xl:text-xs
+        xl:text-center
+        xl:py-6
         "
       >
         Copyright © {{ now.Year }} Brandon Jose Tenorio Noguera
         <br>
         Built with
-        <a href="https://gohugo.io/" target="_blank" rel="noopener noreferrer" class="hover:text-blue hover:scale-105 duration-150 ease-in-out">
+        <a href="https://gohugo.io/" target="_blank" rel="noopener noreferrer" class="
+          xl:hover:text-blue
+          xl:hover:scale-105
+          xl:duration-150
+          xl:ease-in-out
+          "
+        >
           Hugo
         </a>
       </div>

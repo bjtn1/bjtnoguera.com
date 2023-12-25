@@ -1,13 +1,30 @@
 {{ define "main" }}
-<!--
-NOTE
-This was (mostly) taken from
-https://github.com/fireship-io/fireship.io/blob/master/layouts/404.html
-:-->
-<main class="prose prose-maincolors min-w-full text-center">
-  <h1 class="text-5xl mt-12">404 Not Found</h1>
+<!-- This was (mostly) taken from -->
+<!-- https://github.com/fireship-io/fireship.io/blob/master/layouts/404.html -->
+<main class="
+  xl:flex
+  xl:flex-col
+  xl:justify-center
+  xl:items-center
+  xl:prose
+  xl:prose-maincolors
+  xl:min-w-full
+  xl:text-center
+  "
+>
+  <h1 class="
+    xl:text-5xl
+    "
+  >
+    404 Not Found
+  </h1>
   <p>Yay! You found the blinking cat!</p>
-  <a class="text-white" href="/">Go Home</a>
+  <a href="/" class="
+    xl:text-white
+    "
+  >
+    Go Home
+  </a>
 
   {{ $image := resources.Get "imgs/plink.gif" }}
   {{ $image := $image.Fit "600x400" }}
