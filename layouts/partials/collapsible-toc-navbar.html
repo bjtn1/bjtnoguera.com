@@ -11,38 +11,14 @@ document.addEventListener("DOMContentLoaded", function () {
 </script>
 
 <style>
-/* Style the button that is used to open and close the collapsible content */
-.collapsible {
-  /* background-color: #eee; */
-  /* color: #444; */
-  /* cursor: pointer; */
-  /* padding: 18px; */
-  /* width: 100%; */
-  /* border: none; */
-  /* text-align: left; */
-  /* outline: none; */
-  /* font-size: 15px; */
-}
 
-/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
 .active {
-  /* background-color: #ccc; */
   border-bottom-left-radius: 0rem;
   border-bottom-right-radius: 0rem;
 }
 
-/* Style the collapsible content. Note: hidden by default */
-.content {
-  /* padding: 0 18px; */
-  /* max-height: 0; */
-  /* overflow: hidden; */
-  /* transition: max-height 0.2s ease-out; */
-  /* background-color: #f1f1f1; */
-}
-
-/* Show the content when the active class is present */
 .content.active {
-  max-height: 500px; /* Adjust this value to fit your content */
+  max-height: 500px;
   border-bottom-left-radius: 1.5rem;
   border-bottom-right-radius: 1.5rem;
 }
@@ -72,6 +48,7 @@ document.addEventListener("DOMContentLoaded", function () {
 >
   On this page
 </button>
+
 <div class="
   content
   
