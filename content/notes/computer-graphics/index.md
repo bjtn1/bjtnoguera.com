@@ -1,7 +1,6 @@
 ---
-date: "2023-12-24T19:36:55-05:00"
-title: "Artificial Intelligence"
-draft: true
+date: "2023-12-24T22:16:41-05:00"
+title: "Computer Graphics"
 ---
 
 ## Link to pdf file

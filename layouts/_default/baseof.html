@@ -8,6 +8,9 @@
     {{ $style := resources.Get "css/tailwind.css" }}
     <link href="{{ $style.Permalink }}" rel="stylesheet">
 
+    <!-- TODO change this so that it's looking at assets/js/bg-changer.js -->
+    <script src="/pagefind/pagefind-ui.js"></script>
+
     {{ partial "bg-linear-gradient.html" . }}
 
     <style>
@@ -44,7 +47,6 @@
       xl:justify-center
       "
     >
-      <!-- TODO Make this sticky -->
       <div class="
         px-4
         max-xl:py-1.5
@@ -116,17 +118,6 @@
         >
           Projects
         </a>
-        <button class="
-          xl:py-2
-          xl:px-4
-          xl:hover:text-blue
-          xl:hover:scale-105
-          xl:duration-150
-          xl:ease-in-out
-          "
-        >
-          Search
-        </button>
       </div>
     </header>
 

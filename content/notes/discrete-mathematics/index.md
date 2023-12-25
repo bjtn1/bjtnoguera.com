@@ -1,7 +1,6 @@
 ---
-date: "2023-12-24T19:36:55-05:00"
-title: "Artificial Intelligence"
-draft: true
+date: "2023-12-24T22:15:29-05:00"
+title: "Discrete Mathematics"
 ---
 
 ## Link to pdf file
