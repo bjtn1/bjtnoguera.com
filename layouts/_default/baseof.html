@@ -11,6 +11,7 @@
     {{ partial "bg-linear-gradient.html" . }}
 
     <style>
+      * {outline: 1px solid white;}
       a:hover {
         color: #82aaff;
       }
@@ -126,7 +127,10 @@
       >
         Copyright © {{ now.Year }} Brandon Jose Tenorio Noguera
         <br>
-        Built with <a href="https://gohugo.io/" target="_blank" rel="noopener noreferrer" class="hover:text-blue hover:scale-105 duration-150 ease-in-out">Hugo</a>
+        Built with
+        <a href="https://gohugo.io/" target="_blank" rel="noopener noreferrer" class="hover:text-blue hover:scale-105 duration-150 ease-in-out">
+          Hugo
+        </a>
       </div>
     </footer>
   </body>

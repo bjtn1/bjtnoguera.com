@@ -1,38 +1,28 @@
 {{ define "main" }}
 <div class="
-  px-12
   flex
+  flex-col
   justify-center
   items-center
+  overflow-y-scroll
   w-full
-  h-full
   "
 >
-  <div class="
-    flex
-    overflow-y-scroll
-    max-w-full
-    flex-col
-    justify-center
-    items-start
-    "
-  >
-    {{ range.Pages.ByTitle }}
-    <div>
-      <a href="{{ .RelPermalink }}">
-        <h1 class="
-          text-7xl
-          hover:text-blue
-          hover:scale-105
-          duration-150
-          ease-in-out
-          "
-        >
-          {{ .Title }}
-        </h1>
-      </a>
-    </div>
-    {{ end }}
+  {{ range.Pages.ByTitle }}
+  <div>
+    <a href="{{ .RelPermalink }}">
+      <h1 class="
+        text-7xl
+        hover:text-blue
+        hover:scale-105
+        duration-150
+        ease-in-out
+        "
+      >
+        {{ .Title }}
+      </h1>
+    </a>
   </div>
+  {{ end }}
 </div>
 {{ end }}
