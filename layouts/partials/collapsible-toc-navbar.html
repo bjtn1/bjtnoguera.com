@@ -1,0 +1,64 @@
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  let coll = document.querySelector(".collapsible");
+  let content = document.querySelector(".content");
+
+  coll.addEventListener("click", function () {
+    content.classList.toggle("active");
+    coll.classList.toggle("active");
+  });
+});
+</script>
+
+<style>
+
+.active {
+  border-bottom-left-radius: 0rem;
+  border-bottom-right-radius: 0rem;
+}
+
+.content.active {
+  max-height: 500px;
+  border-bottom-left-radius: 1.5rem;
+  border-bottom-right-radius: 1.5rem;
+}
+
+.collapsible.active {
+  border-bottom-left-radius: 0rem;
+  border-bottom-right-radius: 0rem;
+}
+</style>
+
+<button type="button" class="
+  collapsible
+
+  px-4
+  max-xl:py-1.5
+  w-full
+  bg-search-bg
+  rounded-3xl 
+  border-solid
+  border-black
+  text-white-50
+  text-sm
+  flex
+  justify-center
+  gap-5
+  "
+>
+  On this page
+</button>
+
+<div class="
+  content
+  
+  max-h-0
+  overflow-y-scroll
+  bg-search-bg
+  text-white-50
+  px-4
+  "
+>
+  {{ .Page.TableOfContents }}
+</div>
+
