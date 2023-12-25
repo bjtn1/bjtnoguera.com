@@ -12,6 +12,7 @@
     <script src="/pagefind/pagefind-ui.js"></script>
 
     {{ partial "bg-linear-gradient.html" . }}
+    {{ if .Params.math }}{{ partial "helpers/katex.html" . }}{{ end }}
 
     <style>
       a:hover {

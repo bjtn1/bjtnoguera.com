@@ -42,6 +42,7 @@ In no particular order...
 - https://deeditor.com/ for re-coloring all the `.svg` logos/icons you see in the homepage
 - https://www.svgrepo.com/ for all the `.svg` icons/logos you see in the homepage
 - The entire [tailwindcss documentation](https://tailwindcss.com/docs/installation)
+- https://mertbakir.gitlab.io/hugo/math-typesetting-in-hugo/
 
 <!-- TOC --><a name="workflows"></a>
 # Workflows
