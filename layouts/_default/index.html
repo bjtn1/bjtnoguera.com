@@ -6,21 +6,58 @@ NOTE
 Putting comments before "main" makes the html page not render
 Make sure to put comment inside main
 -->
-<div class="px-12 grid w-full h-full" style="grid-template-columns: 1fr 2fr;">
-  {{ partial "menu.html" . }}
-  <!--Hero section-->
-  <div class="flex flex-col justify-center items-start">
+<div class="
+  px-12
+  flex
+  justify-center
+  items-center
+  w-full
+  h-full
+  "
+>
+  <!-- Hero section -->
+  <div class="
+    flex
+    flex-col
+    justify-center
+    items-start
+    "
+  >
+    <!-- First and second name, and first last name section -->
     <div>
-      <h1 class="text-7xl">Brandon Jose Tenorio</h1>
+      <h1 class="
+        text-7xl
+        "
+      >
+        Brandon Jose Tenorio
+      </h1>
     </div>
 
     <!--Second last name and icons section-->
-    <div class="flex items-center gap-x-2">
+    <div class="
+      flex
+      items-center
+      gap-x-2
+      "
+    >
       <!--Second last name section-->
-      <h1 class="text-7xl" style="margin-top: -21px;">Noguera</h1>
+      <h1 class="
+        text-7xl
+        "
+        style="margin-top: -21px;"
+      >
+        Noguera
+      </h1>
 
       <!--Links in hero section-->
-      <div class="text-white-50 flex justify-around items-center" style="width: 383px;">
+      <div class="
+        text-white-50
+        flex
+        justify-around
+        items-center
+        "
+        style="width: 383px;"
+      >
         {{ $github := resources.Get "icons/github.svg" }}
         {{ $github_svg := $github.RelPermalink }}
         {{ $coffee := resources.Get "icons/coffee.svg" }}
@@ -29,23 +66,43 @@ Make sure to put comment inside main
         {{ $at_svg := $at.RelPermalink }}
         {{ $linkedin := resources.Get "icons/linked-in.svg" }}
         {{ $linkedin_svg := $linkedin.RelPermalink }}
+
         <div>
-          <a href="https://github.com/bjtn1" target="_blank" rel="noopener noreferrer"><img class="hover:scale-105" src="{{ $github_svg }}" alt="Github logo" width="50px" height="50"></a>
+          <a href="https://github.com/bjtn1" target="_blank" rel="noopener noreferrer">
+            <img class="hover:scale-105" src="{{ $github_svg }}" alt="Github logo" width="50px" height="50">
+          </a>
         </div>
+
         <div>
-          <a href="https://www.buymeacoffee.com/bjtn" target="_blank" rel="noopener noreferrer"><img class="hover:scale-105" src="{{ $coffee_svg}}" alt="BuyMeACoffee logo" width="50px" height="50"></a>
+          <a href="https://www.buymeacoffee.com/bjtn" target="_blank" rel="noopener noreferrer">
+            <img class="hover:scale-105" src="{{ $coffee_svg}}" alt="BuyMeACoffee logo" width="50px" height="50">
+          </a>
         </div>
+
         <div>
-          <a href="mailto:brandonjtnoguera@gmail.com" target="_blank" rel="noopener noreferrer"><img class="hover:scale-105" src="{{ $at_svg }}"  width="50px" height="50" alt="Email me logo"></a>
+          <a href="mailto:brandonjtnoguera@gmail.com" target="_blank" rel="noopener noreferrer">
+            <img class="hover:scale-105" src="{{ $at_svg }}"  width="50px" height="50" alt="Email me logo">
+          </a>
         </div>
+
         <div>
-          <a href="https://www.linkedin.com/in/brandon-jose-tenorio-noguera/" target="_blank" rel="noopener noreferrer"><img class="hover:scale-105" src="{{ $linkedin_svg }}"  width="50px" height="50" alt="LinkedIn logo"></a>
+          <a href="https://www.linkedin.com/in/brandon-jose-tenorio-noguera/" target="_blank" rel="noopener noreferrer">
+            <img class="hover:scale-105" src="{{ $linkedin_svg }}"  width="50px" height="50" alt="LinkedIn logo">
+          </a>
         </div>
+
       </div>
     </div>
 
     <!--BIO section-->
-    <div class="text-white-50 flex text-center mt-4" style="width: 651.583px;">
+    <div class="
+      text-white-50
+      flex
+      text-center
+      mt-4
+      "
+      style="width: 651.583px;"
+    >
       Welcome to my website! :D I'm glad you made it. Here is where I post my notes and projects. You can reach me by email by clicking the at (@) symbol above! I love hearing from readers, and you will almost always get a response back from me. Thank you for stopping by!
     </div>
   </div>

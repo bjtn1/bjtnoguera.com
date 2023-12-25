@@ -1,17 +1,137 @@
 <!DOCTYPE html>
 <html lang="{{ site.LanguageCode }}">
-  {{ partial "head.html" . }}
-  <body class="text-white flex flex-col justify-between" style="height: 100vh;">
-    <header>
-      {{ partial "header.html" . }}
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{{ .Title }}</title>
+
+    {{ $style := resources.Get "css/tailwind.css" }}
+    <link href="{{ $style.Permalink }}" rel="stylesheet">
+
+    {{ partial "bg-linear-gradient.html" . }}
+
+    <style>
+      a:hover {
+        color: #82aaff;
+      }
+    </style>
+  </head>
+
+
+  <body class="
+    text-white
+    h-screen
+    flex
+    flex-col
+    justify-between
+    "
+  >
+
+    <header class="
+      p-4
+      flex
+      justify-center
+      "
+    >
+      <div class="
+        px-4
+        max-w-fit
+        flex
+        justify-center
+        text-white
+        bg-search-bg
+        rounded-3xl 
+        border-solid
+        border-black
+        text-lg
+        "
+        style="border-color: rgba(255,255,255,.08)"
+      >
+        <!-- <input type="search" placeholder="Search..." class="border border-solid border-black"> -->
+        <a href="{{ .Site.BaseURL }}about" class="
+          py-2
+          px-4
+          hover:text-blue
+          hover:scale-105
+          duration-150
+          ease-in-out
+          "
+        >
+          About
+        </a>
+        <a href="{{ .Site.BaseURL }}" class="
+          py-2
+          px-4
+          hover:text-blue
+          hover:scale-105
+          duration-150
+          ease-in-out
+          "
+        >
+          Home
+        </a>
+        <a href="{{ .Site.BaseURL }}notes" class="
+          py-2
+          px-4
+          hover:text-blue
+          hover:scale-105
+          duration-150
+          ease-in-out
+          "
+        >
+          Notes
+        </a>
+        <a href="{{ .Site.BaseURL }}projects" class="
+          py-2
+          px-4
+          hover:text-blue
+          hover:scale-105
+          duration-150
+          ease-in-out
+          "
+        >
+          Projects
+        </a>
+        <button class="
+          py-2
+          px-4
+          hover:text-blue
+          hover:scale-105
+          duration-150
+          ease-in-out
+          "
+        >
+          Search
+        </button>
+      </div>
     </header>
 
-    <main style="flex: 1; max-height: 500px;">
+    <main class="
+      flex-1
+      overflow-y-scroll
+      "
+      style="max-height: 80vh;"
+    >
       {{ block "main" . }} {{ end }}
     </main>
 
-    <footer class="w-full">
-      {{ partial "footer.html" . }}
+    <footer class="
+      w-full
+      ">
+      <div class="
+        text-white-50
+        text-xs
+        text-center
+        py-6
+        "
+      >
+        Copyright © {{ now.Year }} Brandon Jose Tenorio Noguera
+        <br>
+        Built with
+        <a href="https://gohugo.io/" target="_blank" rel="noopener noreferrer" class="hover:text-blue hover:scale-105 duration-150 ease-in-out">
+          Hugo
+        </a>
+      </div>
     </footer>
   </body>
 </html>

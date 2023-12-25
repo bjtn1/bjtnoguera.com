@@ -1,19 +1,22 @@
 {{ define "main" }}
-<div class="px-12 flex justify-between items-center w-full h-full">
-  <!--Left menu section-->
-  {{ partial "menu.html" . }}
-
+<div class="
+  flex
+  px-12
+  gap-7
+  h-full
+  "
+>
+  {{ partial "toc-navbar.html" . }}
   <!--Center section: contains main content-->
   <div class="
-    max-w-4xl
-    h-full
-    overflow-y-scroll
     prose
     prose-maincolors
-    ">
+    overflow-y-scroll
+    max-w-full
+    "
+  >
     {{ .Content }}
   </div>
 
-  {{ partial "toc-navbar.html" . }}
 </div>
 {{ end }}
