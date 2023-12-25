@@ -1329,6 +1329,10 @@ video {
   height: 100%;
 }
 
+.max-h-0 {
+  max-height: 0px;
+}
+
 .w-full {
   width: 100%;
 }
