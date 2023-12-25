@@ -109,11 +109,11 @@ git switch main
 
 <!-- TOC --><a name="todos"></a>
 # TODOs
-- [ ] Consider adding scrollbar (maybe also toc-navbar?) to list pages layout
 - [ ] Add a bit more information on how i take notes with neovim [Information about my note-taking worflow](#information-about-my-note-taking-worflow)
 - [ ] How to get math to render in html? (Do I need to install and download KaTeX?)
-- [ ] Integrate [pagefind](https://pagefind.app/docs/) into the search bar
-- [ ] Look into allowing users to turn off the moving linear gradient I added (turning it off means they would see the tokyongiht bakground I had before)
+- [ ] Look into allowing users to turn off the moving linear gradient I added (repurpose "search" button into a "change background button")
+- [ ] ~~Consider adding scrollbar (maybe also toc-navbar?) to list pages layout~~
+- [ ] ~~Integrate [pagefind](https://pagefind.app/docs/) into the search bar~~
 - [x] ~~Find a way to link tailwindcss to `./layouts/partials/head.html`'s link tag for css~~
 - [x] ~~Get menu to stay in the left side position that it currently is for every page (position: absolute?)~~
 - [x] ~~Look into how to get the middle section of single pages to be scrollable, but the left and right section stay in place~~
