@@ -1,22 +1,16 @@
 <script>
-var coll = document.getElementsByClassName("collapsible");
-var i;
+document.addEventListener("DOMContentLoaded", function () {
+  var coll = document.querySelector(".collapsible");
+  var content = document.querySelector(".content");
 
-for (i = 0; i < coll.length; i++) {
-  coll[i].addEventListener("click", function() {
-    this.classList.toggle("active");
-    var content = this.nextElementSibling;
-    if (content.style.display === "block") {
-      content.style.display = "none";
-    } else {
-      content.style.display = "block";
-    }
+  coll.addEventListener("click", function () {
+    content.classList.toggle("active");
   });
-} 
+});
 </script>
 
 <style>
- /* Style the button that is used to open and close the collapsible content */
+/* Style the button that is used to open and close the collapsible content */
 .collapsible {
   background-color: #eee;
   color: #444;
@@ -37,10 +31,16 @@ for (i = 0; i < coll.length; i++) {
 /* Style the collapsible content. Note: hidden by default */
 .content {
   padding: 0 18px;
-  display: none;
+  max-height: 0;
   overflow: hidden;
+  transition: max-height 0.2s ease-out;
   background-color: #f1f1f1;
-} 
+}
+
+/* Show the content when the active class is present */
+.content.active {
+  max-height: 500px; /* Adjust this value to fit your content */
+}
 </style>
 
 <button type="button" class="collapsible">
