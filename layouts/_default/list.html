@@ -1,16 +1,26 @@
 {{ define "main" }}
 <div class="
+  flex
+  flex-col
+  justify-center
+  items-center
+  w-full
+  text-center
+
   xl:flex
   xl:flex-col
   xl:justify-center
   xl:items-center
   xl:w-full
+  xl:text-center
   "
 >
   {{ range.Pages.ByTitle }}
   <div>
     <a href="{{ .RelPermalink }}">
       <h1 class="
+        text-3xl
+
         xl:text-7xl
         xl:hover:text-blue
         xl:hover:scale-105
