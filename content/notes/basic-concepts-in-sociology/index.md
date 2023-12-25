@@ -1,6 +1,7 @@
 ---
 date: "2023-12-20T21:59:11-05:00"
 title: "Basic Concepts in Sociology"
+draft: false
 ---
 
 ## Link to pdf file
