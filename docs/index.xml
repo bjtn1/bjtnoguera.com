@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Brandon J. T. Noguera</title>
+    <link>https://example.org/</link>
+    <description>Recent content on Brandon J. T. Noguera</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 24 Dec 2023 22:16:41 -0500</lastBuildDate>
+    <atom:link href="https://example.org/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Computer Graphics</title>
+      <link>https://example.org/notes/computer-graphics/</link>
+      <pubDate>Sun, 24 Dec 2023 22:16:41 -0500</pubDate>
+      <guid>https://example.org/notes/computer-graphics/</guid>
+      <description>Link to pdf file My notebook.pdf for this course Course Description </description>
+    </item>
+    <item>
+      <title>Operating Systems</title>
+      <link>https://example.org/notes/operating-systems/</link>
+      <pubDate>Sun, 24 Dec 2023 22:16:10 -0500</pubDate>
+      <guid>https://example.org/notes/operating-systems/</guid>
+      <description>Link to pdf file My notebook.pdf for this course Course Description </description>
+    </item>
+    <item>
+      <title>Discrete Mathematics</title>
+      <link>https://example.org/notes/discrete-mathematics/</link>
+      <pubDate>Sun, 24 Dec 2023 22:15:29 -0500</pubDate>
+      <guid>https://example.org/notes/discrete-mathematics/</guid>
+      <description>Link to pdf file My notebook.pdf for this course Course Description </description>
+    </item>
+    <item>
+      <title>Basic Concepts in Sociology</title>
+      <link>https://example.org/notes/basic-concepts-in-sociology/</link>
+      <pubDate>Wed, 20 Dec 2023 21:59:11 -0500</pubDate>
+      <guid>https://example.org/notes/basic-concepts-in-sociology/</guid>
+      <description>Link to pdf file My notebook.pdf for this course Course Description </description>
+    </item>
+    <item>
+      <title>Calculus I</title>
+      <link>https://example.org/notes/calculus-i/</link>
+      <pubDate>Wed, 20 Dec 2023 21:59:11 -0500</pubDate>
+      <guid>https://example.org/notes/calculus-i/</guid>
+      <description>Link to pdf file My notebook.pdf for this course Course Description </description>
+    </item>
+    <item>
+      <title>About</title>
+      <link>https://example.org/about/</link>
+      <pubDate>Wed, 20 Dec 2023 20:59:48 -0500</pubDate>
+      <guid>https://example.org/about/</guid>
+      <description>Hello! :D Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla a augue metus. Vestibulum egestas sed velit eget blandit. Donec eu sapien suscipit lectus rutrum condimentum. Cras finibus convallis posuere. In hac habitasse platea dictumst. Nunc ut cursus eros. Sed at diam non augue porttitor venenatis. Donec eu facilisis ipsum, a cursus enim.&#xA;Donec quis ante condimentum, porta magna quis, tempor ligula. Pellentesque turpis tortor, pulvinar aliquet pretium in, lobortis ac arcu.</description>
+    </item>
+  </channel>
+</rss>
