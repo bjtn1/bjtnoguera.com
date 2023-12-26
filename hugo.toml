@@ -2,5 +2,5 @@ baseURL = "https://example.org/"
 # This is the baseURL for running te site on github pages
 # baseURL = "https://bjtn1.github.io/bjtnoguera/"
 languageCode = "en-us"
-title = "Brandon J. T. Noguera"
+title = "Home"
 pluralizelisttitles = false
