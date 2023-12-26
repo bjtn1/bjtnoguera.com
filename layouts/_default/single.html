@@ -33,6 +33,7 @@
   xl:h-full
 "
 >
+  <!-- Determine which type of toc navbar we use depending on the user's width in pixels -->
   <div class="coll">
     {{ partial "collapsible-toc-navbar.html" . }}
   </div>
@@ -40,6 +41,7 @@
   <div class="toc overflow-y-scroll">
     {{ partial "toc-navbar.html" . }}
   </div>
+
   <!-- Center section: contains main content -->
   <div class="
     prose-lg
@@ -47,6 +49,7 @@
     prose-maincolors
     overflow-y-scroll
 
+    xl:prose-xl
     xl:prose
     xl:prose-maincolors
     xl:overflow-y-scroll
