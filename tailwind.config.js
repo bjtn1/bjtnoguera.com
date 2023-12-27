@@ -43,10 +43,10 @@ module.exports = {
             // '--tw-prose-counters': theme('colors.white[600]'),
             // '--tw-prose-bullets': theme('colors.white[400]'),
             // '--tw-prose-hr': theme('colors.white[300]'),
-            // '--tw-prose-quotes': theme('colors.white[900]'),
-            // '--tw-prose-quote-borders': theme('colors.white[300]'),
+            '--tw-prose-quotes': theme('colors.white'),
+            '--tw-prose-quote-borders': theme('colors.black'),
             // '--tw-prose-captions': theme('colors.white[700]'),
-            // '--tw-prose-code': theme('colors.white[900]'),
+            '--tw-prose-code': theme('colors.white'),
             // '--tw-prose-pre-code': theme('colors.white[100]'),
             // '--tw-prose-pre-bg': theme('colors.white[900]'),
             // '--tw-prose-th-borders': theme('colors.white[300]'),
@@ -67,6 +67,12 @@ module.exports = {
             // '--tw-prose-invert-pre-bg': 'rgb(0 0 0 / 50%)',
             // '--tw-prose-invert-th-borders': theme('colors.white[600]'),
             // '--tw-prose-invert-td-borders': theme('colors.white[700]'),
+            'code::before': {
+              content: '""'
+            },
+            'code::after': {
+              content: '""'
+            }
           },
         },
       }),

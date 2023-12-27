@@ -1,6 +1,7 @@
 ---
 date: "2023-12-24T22:15:29-05:00"
 title: "Discrete Mathematics"
+draft: true
 ---
 
 ## Link to pdf file

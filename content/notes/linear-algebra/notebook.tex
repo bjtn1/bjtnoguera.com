@@ -1,0 +1,216 @@
+%------------------------------------------------------------------------Begin preamble------------------------------------------------------------------------
+\documentclass[12pt]{article}
+% Uncomment these two lines if you want to use Times New Roman (needs XeLaTeX)
+% \usepackage{fontspec}
+% \setmainfont{Times New Roman}
+
+\usepackage{amsmath} % For math
+\usepackage{amssymb} % For more math
+\usepackage{fancyhdr} % For fancy headers and footers
+\usepackage{fancyvrb} % For writing blocks of code verbatim (like LaTeX code)
+\usepackage{geometry} % For manipulating margins and meta doc stuff
+\usepackage{graphicx} % Required for inserting images
+\usepackage{hyperref} % For linking stuff
+\usepackage{cleveref} % Better cross refencing % Must be loaded after hyperref
+\usepackage{lastpage} % For doing "Page n of |n|"
+\usepackage{minted} % For color coding code sections
+\usepackage{pgfplots} % For adding plots and graphs
+\usepackage[indent=00pt]{parskip} % Get rid of beginning indents on paragraphs and set spacing between paragraphs
+\usepackage{siunitx} % For adding siunits inside math zones
+\usepackage[most]{tcolorbox} % For inserting color boxes
+\usepackage{tikz}
+\usepackage{titling} % For vertically centering title, author, and date
+\usepackage{tocloft} % For cooler toc
+\usepackage{xcolor} % For coloring text
+\usepackage{witharrows} % For cool arrows for pointing at stuff
+
+%%%%%%%%% Begin tocloft setup %%%%%%%%%%%%%%
+\renewcommand\cftsecfont{\normalfont}
+\renewcommand\cftsecpagefont{\normalfont}
+\renewcommand{\cftsecleader}{\cftdotfill{\cftsecdotsep}}
+\renewcommand\cftsecdotsep{\cftdot}
+\renewcommand\cftsubsecdotsep{\cftdot}
+%%%%%%%%% End tocloft %%%%%%%%%%%%%%
+
+%%%%%%%%%% Begin hyperref setup %%%%%%%%%%%%%%%%%%%
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    urlcolor=blue,
+}
+%%%%%%%%%% End hyperref setup %%%%%%%%%%%%%%%%%%%
+
+%%%%%%% Begin pgfplotsset setup %%%%%%%
+\pgfplotsset{compat=1.18} % Compiler be bugging
+%%%%%%% End pgfplotsset setup %%%%%%%
+
+%%%%%%% Begin fancyhdr setup %%%%%%%
+\pagestyle{fancy}
+\renewcommand{\footrulewidth}{0.4pt} % default is 0pt
+\lhead{Linear Algebra} % Top left header
+\chead{} % Top center header
+\rhead{} % Top right header
+
+\lfoot{Brandon J. T. Noguera} % Bottom left footer
+\cfoot{} % Bottom center footer
+\rfoot{Page \thepage\ of \pageref*{LastPage}} % Bottom right footer
+% doing \pageref*{some_url} turns off the hyperlink capability for some_url
+%%%%%%% End fancyhdr setup %%%%%%%
+
+%%%%%%% Begin titlingpage setup %%%%%%%
+\renewcommand\maketitlehooka{\null\mbox{}\vfill}
+\renewcommand\maketitlehookd{\vfill\null}
+%%%%%% End titlingpage setup %%%%%%%
+%------------------------------------------------------------------------End preamble------------------------------------------------------------------------
+
+\title{\textbf{Linear Algebra}}
+\author{Brandon Jose Tenorio Noguera}
+\date{}
+\begin{document}
+
+\begin{titlingpage}
+\maketitle
+\end{titlingpage}
+
+\tableofcontents
+\newpage
+
+\section{Sources}\label{srcs}
+
+\begin{tcolorbox}[title=Sources]
+These notes were taken from
+\href{https://ocw.mit.edu/courses/res-18-010-a-2020-vision-of-linear-algebra-spring-2020/resources/a-new-way-to-start-linear-algebra/}{MIT's OCW: A vision of linear algebra} and \href{https://ocw.mit.edu/courses/18-06sc-linear-algebra-fall-2011/}{MIT's OCW: Linear Algebra}
+\end{tcolorbox}
+
+\section{The column space of a matrix}\label{p1}
+\begin{tcolorbox}[title=Sources]
+\href{https://ocw.mit.edu/courses/res-18-010-a-2020-vision-of-linear-algebra-spring-2020/resources/the-column-space-of-a-matrix/}{The Column Space of a Matrix by Professor Gilbert Strang}
+\end{tcolorbox}
+
+\subsection{$A = \mathbf{CR}$}\label{}
+\begin{align*}\label{}
+  A_0 &= 
+ \begin{bmatrix}
+   1 & 3 & 2 \\
+   4 & 12 & 8 \\
+   2 & 6 & 4
+ \end{bmatrix} 
+ \\
+  r_1 &= \begin{bmatrix}
+    1 & 3 & 2
+  \end{bmatrix}
+  \\
+    r_2 &= \begin{bmatrix}
+    4 & 12 & 8
+  \end{bmatrix}
+  \\
+      r_3 &= \begin{bmatrix}
+    2 & 6 & 4
+  \end{bmatrix}
+  \\
+  c_1 &= \begin{bmatrix}
+    1 \\
+    4\\
+    2
+  \end{bmatrix}
+  \\
+    c_2 &= \begin{bmatrix}
+    3\\
+    12\\
+    6
+    \end{bmatrix}
+    \\
+      c_3 &= \begin{bmatrix}
+      2\\
+      8\\
+      4
+      \end{bmatrix}
+\end{align*}
+
+Notice that $r_2 = 4(r_1) \text{ and } r_3 = 2(r_2)$
+
+Notice also that $c_2 = 3 (c_1) \text{ and } c_3 = 2 (c_1) $
+
+\begin{align*}
+  A_1 &= \begin{bmatrix}
+    1 & 4 & 2\\
+    4 & 1 & 3\\
+    5 & 5 & 5
+  \end{bmatrix}
+\end{align*}
+
+Notice that $ r_1 + r_2 = r_3 $
+
+These are symmetrical matrices, that's why they start with $ S $
+\begin{equation*}
+    S_2 = \begin{bmatrix}
+      2 & -1\\
+      -1 & 2
+    \end{bmatrix}
+    \ 
+    S_3 = \begin{bmatrix}
+      1 & -1 & 0\\
+      -1 & 2 & -1\\
+      0 & -1 & 1
+    \end{bmatrix}
+    \ 
+    S_4 = \begin{bmatrix}
+      2 & -1 & 0\\
+      -1 & 2 & -1\\
+      0 & -1 & 2
+    \end{bmatrix}
+\end{equation*}
+
+These are \emph{orthogonal} matrices (this just means perpendicular)
+
+Orthogonal matrices tend to express a rotation (they rotate the plane)
+
+\begin{equation*}
+  Q_5 = \begin{bmatrix}
+    \cos^{}\left(\theta\right) & -\sin^{}\left(\theta\right)\\
+    \sin^{}\left(\theta\right) & \cos^{}\left(\theta\right)
+  \end{bmatrix}
+\end{equation*}
+
+\section{The column space of $A $}\label{}
+
+\begin{align*}
+  A \vec{x} &= \begin{bmatrix}
+    1 & 4 & 5\\
+    3 & 2 & 5\\
+    2 & 1 & 3
+  \end{bmatrix} \cdot \begin{bmatrix}
+  x_1\\
+  x_2\\
+  x_3
+  \end{bmatrix}
+  =
+  \begin{bmatrix}
+  1\\
+  3\\
+  2
+  \end{bmatrix} \cdot x_1
+  + 
+  \begin{bmatrix}
+  4\\
+  2\\
+  1
+  \end{bmatrix} \cdot x_2
+  +
+  \begin{bmatrix}
+    5\\
+    5\\
+    3
+  \end{bmatrix} \cdot x_3
+  \\
+  &= 
+  \text{one linear combination of the columns of }A
+\end{align*}
+
+"Linear" because nothing is being squared or cubed or something\\
+"Combination" because we're putting them together
+
+\subsection{All combinations of A}\label{}
+
+The column space of $A = \text{all vector } A \mathbf{x} $ 
+\end{document}
