@@ -1,3 +1,4 @@
+<!-- Source https://www.w3schools.com/howto/howto_js_collapsible.asp -->
 <script>
 document.addEventListener("DOMContentLoaded", function () {
   let coll = document.querySelector(".collapsible");
@@ -11,7 +12,6 @@ document.addEventListener("DOMContentLoaded", function () {
 </script>
 
 <style>
-
 .active {
   border-bottom-left-radius: 0rem;
   border-bottom-right-radius: 0rem;
@@ -27,6 +27,14 @@ document.addEventListener("DOMContentLoaded", function () {
 .collapsible.active {
   border-bottom-left-radius: 0rem;
   border-bottom-right-radius: 0rem;
+}
+
+.collapsible:before {
+  content: "\002B";
+}
+
+.collapsible.active:before {
+  content: "\2212";
 }
 </style>
 
