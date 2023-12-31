@@ -3,10 +3,6 @@
 @tailwind utilities;
 
 /* This is where I can add rules that apply to all instances of a specific tag! */
-a {
-  @apply text-red;
-}
-
 a:hover {
-  @apply text-blue
+  @apply text-blue duration-150
 }
