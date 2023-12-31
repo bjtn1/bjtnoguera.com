@@ -65,7 +65,6 @@
 
 \title{\textbf{Linear Algebra}}
 \author{Brandon Jose Tenorio Noguera}
-\date{}
 \begin{document}
 
 \begin{titlingpage}
@@ -76,141 +75,404 @@
 \newpage
 
 \section{Sources}\label{srcs}
-
 \begin{tcolorbox}[title=Sources]
-These notes were taken from
-\href{https://ocw.mit.edu/courses/res-18-010-a-2020-vision-of-linear-algebra-spring-2020/resources/a-new-way-to-start-linear-algebra/}{MIT's OCW: A vision of linear algebra} and \href{https://ocw.mit.edu/courses/18-06sc-linear-algebra-fall-2011/}{MIT's OCW: Linear Algebra}
+These notes were taking from \href{https://ocw.mit.edu/courses/18-06sc-linear-algebra-fall-2011/pages/syllabus/}{MIT Linear Algebra taught by Professor Gilbert Strang} and \href{https://ocw.mit.edu/courses/res-18-010-a-2020-vision-of-linear-algebra-spring-2020/}{MIT A Vision of Linear Algbera by Professor Gilbert Strang}
 \end{tcolorbox}
 
-\section{The column space of a matrix}\label{p1}
-\begin{tcolorbox}[title=Sources]
-\href{https://ocw.mit.edu/courses/res-18-010-a-2020-vision-of-linear-algebra-spring-2020/resources/the-column-space-of-a-matrix/}{The Column Space of a Matrix by Professor Gilbert Strang}
-\end{tcolorbox}
+\section{Course goals}\label{}
 
-\subsection{$A = \mathbf{CR}$}\label{}
-\begin{align*}\label{}
-  A_0 &= 
- \begin{bmatrix}
-   1 & 3 & 2 \\
-   4 & 12 & 8 \\
-   2 & 6 & 4
- \end{bmatrix} 
- \\
-  r_1 &= \begin{bmatrix}
-    1 & 3 & 2
+After completing this course, you will understand:
+\begin{itemize}
+  \item Systems of linear equations
+  \item Row reduction and echelon forms
+  \item Matrix operations, including inverses
+  \item Block matrices
+  \item Linear dependece and independence
+  \item Subspaces and bases and dimensions
+  \item Orthogonal bases and orthogonal projections
+  \item Gram-Schmidt process
+  \item Linear models and least-squares problems
+  \item Determinants and their properties
+  \item Cramer's Rule
+  \item Eqigenvalues and eigenvectors
+  \item Diagonalization of a matrix
+  \item Symmetric matrices
+  \item Positive definite matrices
+  \item Similar matrices
+  \item Linear transformations
+  \item Singular value decomposition
+  
+\end{itemize}
+
+\section{Unit I: Ax = b and the Four Subspaces}\label{u1}
+
+\subsection{The Geometry of Linear Equations}\label{u1.1}
+
+
+Imagine you're given $n $ linear equations with $n $ linear unknowns. In linear algebra you can look at (or think of) this system in one of three ways:
+\begin{itemize}
+    \item Row picutre
+    \item Column picture
+    \item Matrix form
+\end{itemize}
+
+Example: imagine we're given this system of linear equations
+\begin{align*}
+    2x - y &= 0\\
+    -x + 2y &= 3\\
+\end{align*}
+
+If we think of this in \textbf{matrix form} we get...
+\begin{align*}
+  \begin{bmatrix}
+    2 & -1\\
+    -1 & 2
   \end{bmatrix}
-  \\
-    r_2 &= \begin{bmatrix}
-    4 & 12 & 8
+  \begin{bmatrix}
+  x\\
+  y
   \end{bmatrix}
-  \\
-      r_3 &= \begin{bmatrix}
-    2 & 6 & 4
+  &= 
+  \begin{bmatrix}
+  0\\
+  3
+  \end{bmatrix}\\
+\end{align*}
+Which we can generalize like...
+\begin{align*}
+  Ax &= b\\
+\end{align*}
+Where
+\begin{align*}
+  A &= \text{ matrix of coefficients}\\
+  x &= \text{ matrix of unknowns}\\
+  b &= \text{ matrix of constants }\\
+\end{align*}
+If we think of this in \textbf{row picture form} we get a graph with $x $ and $y $ coordinates that satisfy each equation like...
+
+\begin{align*}
+  \begin{tikzpicture}
+    \begin{axis}[
+      xmin=-5,
+      xmax=5,
+      ymin=-5,
+      ymax=5,
+      axis lines=middle,
+      xlabel=$ x $,
+      ylabel=$ y $,
+      title={Row picture},
+      xmajorgrids=true,
+      ymajorgrids=true,
+      grid style=dashed,
+      domain=-5:5,
+      ]
+      \addplot [blue] {2*x}; 
+      \addplot [red] {(x+3)/2};
+    \end{axis}
+  \end{tikzpicture}\\
+\end{align*}
+Where the \textcolor{blue}{\textbf{blue line}} represents $ 2x-y=0 $ and the \textcolor{red}{\textbf{red line}} represents $ -x+2y=3 $
+
+
+If we think of this in \textbf{column picture form} we get the following equation
+\begin{align*}
+  x \cdot \begin{bmatrix}
+    2\\
+    -1
   \end{bmatrix}
-  \\
-  c_1 &= \begin{bmatrix}
-    1 \\
-    4\\
+  +
+  y \cdot \begin{bmatrix}
+    -1\\
     2
-  \end{bmatrix}
-  \\
-    c_2 &= \begin{bmatrix}
-    3\\
-    12\\
-    6
-    \end{bmatrix}
-    \\
-      c_3 &= \begin{bmatrix}
-      2\\
-      8\\
-      4
-      \end{bmatrix}
-\end{align*}
-
-Notice that $r_2 = 4(r_1) \text{ and } r_3 = 2(r_2)$
-
-Notice also that $c_2 = 3 (c_1) \text{ and } c_3 = 2 (c_1) $
-
-\begin{align*}
-  A_1 &= \begin{bmatrix}
-    1 & 4 & 2\\
-    4 & 1 & 3\\
-    5 & 5 & 5
-  \end{bmatrix}
-\end{align*}
-
-Notice that $ r_1 + r_2 = r_3 $
-
-These are symmetrical matrices, that's why they start with $ S $
-\begin{equation*}
-    S_2 = \begin{bmatrix}
-      2 & -1\\
-      -1 & 2
-    \end{bmatrix}
-    \ 
-    S_3 = \begin{bmatrix}
-      1 & -1 & 0\\
-      -1 & 2 & -1\\
-      0 & -1 & 1
-    \end{bmatrix}
-    \ 
-    S_4 = \begin{bmatrix}
-      2 & -1 & 0\\
-      -1 & 2 & -1\\
-      0 & -1 & 2
-    \end{bmatrix}
-\end{equation*}
-
-These are \emph{orthogonal} matrices (this just means perpendicular)
-
-Orthogonal matrices tend to express a rotation (they rotate the plane)
-
-\begin{equation*}
-  Q_5 = \begin{bmatrix}
-    \cos^{}\left(\theta\right) & -\sin^{}\left(\theta\right)\\
-    \sin^{}\left(\theta\right) & \cos^{}\left(\theta\right)
-  \end{bmatrix}
-\end{equation*}
-
-\section{The column space of $A $}\label{}
-
-\begin{align*}
-  A \vec{x} &= \begin{bmatrix}
-    1 & 4 & 5\\
-    3 & 2 & 5\\
-    2 & 1 & 3
-  \end{bmatrix} \cdot \begin{bmatrix}
-  x_1\\
-  x_2\\
-  x_3
   \end{bmatrix}
   =
   \begin{bmatrix}
-  1\\
-  3\\
-  2
-  \end{bmatrix} \cdot x_1
-  + 
-  \begin{bmatrix}
-  4\\
-  2\\
-  1
-  \end{bmatrix} \cdot x_2
-  +
-  \begin{bmatrix}
-    5\\
-    5\\
+    0\\
     3
-  \end{bmatrix} \cdot x_3
-  \\
-  &= 
-  \text{one linear combination of the columns of }A
+  \end{bmatrix}\\
+\end{align*}
+Which we refer to as the \textbf{linear combination} of the columns.
+This can be represented as a vector graph like so
+
+\begin{align*}
+  \begin{tikzpicture}
+    \begin{axis}[
+      xmin=-5,
+      xmax=5,
+      ymin=-5,
+      ymax=5,
+      axis lines=middle,
+      xlabel=$ x $,
+      ylabel=$ y $,
+      title={Column picture form},
+      xmajorgrids=true,
+      ymajorgrids=true,
+      grid style=dashed,
+      domain=5:5,
+      ]
+      \draw[ultra thick, blue, ->] (0,0) -- (2,-1);
+      \draw[ultra thick, red, ->] (0,0) -- (-1,2);
+    \end{axis}
+  \end{tikzpicture}
 \end{align*}
 
-"Linear" because nothing is being squared or cubed or something\\
-"Combination" because we're putting them together
+Where the \textcolor{blue}{\textbf{blue}} vector represents the column \begin{equation*}
+  \begin{bmatrix}
+  2\\
+  -1
+  \end{bmatrix}
+\end{equation*}
+and the \textcolor{red}{\textbf{red}} vector represents the column \begin{equation*}
+  \begin{bmatrix}
+  -1\\
+  2
+  \end{bmatrix}
+\end{equation*}
 
-\subsection{All combinations of A}\label{}
+Now we need to take a combination. Let $x=1 $ and $y=2 $
 
-The column space of $A = \text{all vector } A \mathbf{x} $ 
+\begin{align*}
+    1 \begin{bmatrix}
+    2\\
+    -1
+    \end{bmatrix}
+    +
+    2 \begin{bmatrix}
+    -1\\
+    2
+    \end{bmatrix}
+    =
+    \begin{bmatrix}
+    0\\
+    3
+    \end{bmatrix}
+\end{align*}
+
+\begin{align*}
+\begin{tikzpicture}
+  \begin{axis}[
+    xmin=-5,
+    xmax=5,
+    ymin=-5,
+    ymax=5,
+    axis lines=middle,
+    xlabel=$ x $,
+    ylabel=$ y $,
+    title={Resulting vector},
+    xmajorgrids=true,
+    ymajorgrids=true,
+    grid style=dashed,
+    domain=5:5,
+    ]
+    \draw[ultra thick, green, ->] (0,0) -- (0,3);
+  \end{axis}
+\end{tikzpicture}
+\end{align*}
+
+What are all the combination of $ x $ and $ y $ that satisfy this equation?
+
+Another example. Assume we're given this system of linear equations:
+
+\begin{align*}
+    2x-y+0z &= 0\\
+    -x + y - z &= -1\\
+    0x - 3y + 4z &= 4
+\end{align*}
+
+In matrix for we get
+\begin{align*}
+    A &= \begin{bmatrix}
+      2 & -1 & 0\\
+      -1 & 2 & -1\\
+      0 & -3 & 4 
+    \end{bmatrix}
+    =
+    \begin{bmatrix}
+    0\\
+    -1\\
+    4
+    \end{bmatrix}
+\end{align*}
+
+In row picture form we get
+
+% TODO add a 3d graph
+% \begin{align*}
+% \begin{tikzpicture}
+%   \begin{axis}[
+%     xmin=-10,
+%     xmax=10,
+%     ymin=-10,
+%     ymax=10,
+%     axis lines=middle,
+%     xlabel=$ x $,
+%     ylabel=$ y $,
+%     title={graph title},
+%     xmajorgrids=true,
+%     ymajorgrids=true,
+%     grid style=dashed,
+%     domain=10:10,
+%     ]
+%     
+%   \end{axis}
+% \end{tikzpicture}
+% \end{align*}
+
+Steps to solve in row picture form:
+\begin{itemize}
+    \item Find all the points that would satisfy this equation
+    \item In our example, some solutions would be: 
+    \begin{itemize}
+        \item $ (x=1, y=0, z=0) $
+        \item $ (z=1, x=0, y=0) $ 
+        \item $ (x=0, z=0, y=-\frac{1}{2}) $
+    \end{itemize}
+\end{itemize}
+
+Each row in a 3 by 3 gives us a plane in 3 dimensions. Those planes meet in one points, and that's the solution
+
+\textbf{Column picture form}
+
+\begin{align*}
+    x \begin{bmatrix}
+    2\\
+    -1\\
+    0
+    \end{bmatrix}
+    +
+    y \begin{bmatrix}
+    -1\\
+    2\\
+    -3
+    \end{bmatrix}
+    + z \begin{bmatrix}
+    0\\
+    -1\\
+    4
+    \end{bmatrix}
+    = \begin{bmatrix}
+    0\\
+    -1\\
+    4
+    \end{bmatrix}
+\end{align*}
+
+We want to know what combination of the \textbf{left hand} vectors produces the \textbf{right hand vector}
+
+% TODO draw 3d vector graph for this
+
+It is obvious that the $ z $ vector is one combination that solves this system. So if we let $ x=0, y=0, z=1 $ we have found our answer!
+
+Now imagine the system looks like this
+
+\begin{align*}
+    x \begin{bmatrix}
+    2\\
+    -1\\
+    0
+    \end{bmatrix}
+    +
+    y \begin{bmatrix}
+    -1\\
+    2\\
+    -3
+    \end{bmatrix}
+    + z \begin{bmatrix}
+    0\\
+    -1\\
+    4
+    \end{bmatrix}
+    = \begin{bmatrix}
+    1\\
+    1\\
+    -3
+    \end{bmatrix}
+\end{align*}
+
+Now we've built the right hand vector by letting $ x=1, y=1, z=0 $, and that would be one of our solutions!
+
+Now, is it possible to \textbf{solve Ax=b for every b?}.
+
+Changing the wording, we can ask: \emph{do the \textbf{lniear combinations of the columns} fill 3 dimensional space?}
+
+For the matrix $ A $ above, the answer is yes! 
+
+Let's think, when would the right hand vector not be produceable? If the 3 columns lie on the \textbf{same plane}, we would not be able to get the right vector. In other words, if one column was exactly the same as another column, we may not be able to get $ b $
+
+\begin{align*}
+    Ax &= b
+\end{align*}
+
+How to multiply a matrix by a vector?
+
+\begin{align*}
+    \begin{bmatrix}
+      2 & 5\\
+      1 & 3
+    \end{bmatrix}
+    \begin{bmatrix}
+    1\\
+    2
+    \end{bmatrix}
+    &= 
+    1 \begin{bmatrix}
+    2\\
+    1
+    \end{bmatrix}
+    +
+    2 \begin{bmatrix}
+    5\\
+    3
+    \end{bmatrix}
+    = \begin{bmatrix}
+    1(2) + 2(5) = 12\\
+    1(1) + 2(3) = 7
+    \end{bmatrix}
+\end{align*}
+
+$Ax$ is a combination of the columns of $ A $
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 \end{document}
