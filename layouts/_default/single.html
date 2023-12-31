@@ -1,60 +1,18 @@
 {{ define "main" }}
-<style>
-/* Show toc only on desktops, show collapsible toc everywhere else */
-@media (min-width: 1280px) {
-  .toc {
-    display: block !important;
-  }
-
-  .coll {
-    display: none !important;
-  }
-}
-
-@media (max-width: 1279px) {
-  .toc {
-    display: none !important;
-  }
-
-  .coll {
-    display: block !important;
-  }
-}
-</style>
-
 <div class="
-  max-xl:flex
-  max-xl:flex-col
-  max-xl:px-6
-  
-  xl:flex
-  xl:px-12
-  xl:gap-7
-  xl:h-full
 "
 >
   <!-- Determine which type of toc navbar we use depending on the user's width in pixels -->
-  <div class="coll">
+  <div class="">
     {{ partial "collapsible-toc-navbar.html" . }}
   </div>
 
-  <div class="toc overflow-y-scroll">
+  <div class="">
     {{ partial "toc-navbar.html" . }}
   </div>
 
   <!-- Center section: contains main content -->
   <div class="
-    prose-lg
-    prose
-    prose-maincolors
-    overflow-y-scroll
-    w-full
-
-    xl:prose-xl
-    xl:prose
-    xl:prose-maincolors
-    xl:overflow-y-scroll
-    xl:max-w-full
     "
   >
     {{ .Content }}

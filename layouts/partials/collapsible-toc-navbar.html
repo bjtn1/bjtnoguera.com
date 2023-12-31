@@ -11,61 +11,14 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 </script>
 
-<style>
-.active {
-  border-bottom-left-radius: 0rem;
-  border-bottom-right-radius: 0rem;
-  padding-bottom: 0.5rem;
-}
-
-.content.active {
-  max-height: 500px;
-  border-bottom-left-radius: 1.5rem;
-  border-bottom-right-radius: 1.5rem;
-}
-
-.collapsible.active {
-  border-bottom-left-radius: 0rem;
-  border-bottom-right-radius: 0rem;
-}
-
-.collapsible:before {
-  content: "\002B";
-}
-
-.collapsible.active:before {
-  content: "\2212";
-}
-</style>
 
 <button type="button" class="
-  collapsible
-
-  px-4
-  max-xl:py-1.5
-  w-full
-  bg-search-bg
-  rounded-3xl 
-  border-solid
-  border-black
-  text-white-50
-  text-sm
-  flex
-  justify-center
-  gap-5
   "
 >
   On this page
 </button>
 
 <div class="
-  content
-  
-  max-h-0
-  overflow-y-scroll
-  bg-search-bg
-  text-white-50
-  px-4
   "
 >
   {{ .Page.TableOfContents }}

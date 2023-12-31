@@ -2,25 +2,15 @@
 <!-- This was (mostly) taken from -->
 <!-- https://github.com/fireship-io/fireship.io/blob/master/layouts/404.html -->
 <main class="
-  xl:flex
-  xl:flex-col
-  xl:justify-center
-  xl:items-center
-  xl:prose
-  xl:prose-maincolors
-  xl:min-w-full
-  xl:text-center
   "
 >
   <h1 class="
-    xl:text-5xl
     "
   >
     404 Not Found
   </h1>
   <p>Yay! You found the blinking cat!</p>
   <a href="/" class="
-    xl:text-white
     "
   >
     Go Home
@@ -29,7 +19,7 @@
   {{ $image := resources.Get "imgs/plink.gif" }}
   {{ $image := $image.Fit "600x400" }}
   {{ with $image }}
-    <img class="mx-auto" alt="plinking cat" src="{{ .RelPermalink }}" width="{{ .Width }}" height="{{ .Height }}">
+    <img class="" alt="plinking cat" src="{{ .RelPermalink }}" width="{{ .Width }}" height="{{ .Height }}">
   {{ end }}
 </main>
 
