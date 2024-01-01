@@ -130,6 +130,7 @@ int main(void) {
 }
 ```
 
+
 ### Printing the values of variables (placeholders\format specifier)
 | Format Specifier  | Type it Specifies |
 | ----------------- | ----------------- |
@@ -140,7 +141,6 @@ int main(void) {
 
 To print out the value of a variable, you have to type the format specifier and then type which variable you wanna print out. For example...
 
-### Program: Computing the Dimensional Weight of a Box
 ```c
 #include <stdio.h>
 
@@ -158,6 +158,9 @@ int main(void) {
     return 0;
 }
 ```
+
+
+### Program: Computing the Dimensional Weight of a Box
 
 ## Chapter 2.5: Reading input
 # STOPPED AT PAGE 47
