@@ -2,7 +2,7 @@
 date: "2023-12-31T23:22:31-05:00"
 title: "C Programming Language"
 math: true
-draft: true
+draft: false
 ---
 
 > Haven't figured out how git submodules work yet, but as soon as I do check out [my repo with the book's exercises](https://github.com/bjtn1/c-programming-a-modern-approach)
