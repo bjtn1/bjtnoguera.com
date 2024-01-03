@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>About me | bjtn</title>
+
+    
+    <link href="https://example.org/css/tailwind.css" rel="stylesheet">
+
+    
+    <script src="/pagefind/pagefind-ui.js"></script>
+
+    <style>
+  body {
+    background-color: #16161e;
+  }
+</style>
+
+
+    
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js" onload="renderMathInElement(document.body);"></script>
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+  renderMathInElement(document.body, {
+    delimiters: [
+      {left: "$$", right: "$$", display: true},
+      {left: "$", right: "$", display: false}
+    ]
+  });
+});
+</script>
+
+
+    <style>
+      a:hover {
+        color: #82aaff;
+      }
+    </style>
+  </head>
+
+
+  
+  <body class="
+    text-white
+    h-screen
+    flex
+    flex-col
+    justify-between
+
+    xl:text-white
+    xl:h-screen
+    xl:flex
+    xl:flex-col
+    xl:justify-between
+    "
+  >
+
+    <header class="
+      p-4
+      flex
+      justify-center
+
+      xl:p-4
+      xl:flex
+      xl:justify-center
+      "
+    >
+      <div class="
+        px-4
+        max-xl:py-1.5
+        max-w-fit
+        bg-search-bg
+        rounded-3xl 
+        border-solid
+        border-black
+        text-white-50
+        flex
+        justify-center
+        gap-5
+        text-lg
+
+        xl:px-4
+        xl:max-w-fit
+        xl:flex
+        xl:justify-center
+        xl:bg-search-bg
+        xl:rounded-3xl 
+        xl:border-solid
+        xl:border-black
+        xl:text-lg
+        "
+        style="border-color: rgba(255,255,255,.08)"
+      >
+        
+        <a href="https://example.org/about" class="
+          xl:py-2
+          xl:px-4
+          xl:hover:text-blue
+          xl:hover:scale-105
+          xl:duration-150
+          xl:ease-in-out
+          "
+        >
+          About
+        </a>
+        <a href="https://example.org/" class="
+          xl:py-2
+          xl:px-4
+          xl:hover:text-blue
+          xl:hover:scale-105
+          xl:duration-150
+          xl:ease-in-out
+          "
+        >
+          Home
+        </a>
+        <a href="https://example.org/notes" class="
+          xl:py-2
+          xl:px-4
+          xl:hover:text-blue
+          xl:hover:scale-105
+          xl:duration-150
+          xl:ease-in-out
+          "
+        >
+          Notes
+        </a>
+        <a href="https://example.org/projects" class="
+          xl:py-2
+          xl:px-4
+          xl:hover:text-blue
+          xl:hover:scale-105
+          xl:duration-150
+          xl:ease-in-out
+          "
+        >
+          Projects
+        </a>
+      </div>
+    </header>
+
+    <main class="
+      flex-1
+      overflow-y-scroll
+
+      xl:flex-1
+      xl:overflow-y-scroll
+      "
+      style="max-height: 80vh;"
+    >
+      
+<style>
+ 
+@media (min-width: 1280px) {
+  .toc {
+    display: block !important;
+  }
+
+  .coll {
+    display: none !important;
+  }
+}
+
+@media (max-width: 1279px) {
+  .toc {
+    display: none !important;
+  }
+
+  .coll {
+    display: block !important;
+  }
+}
+</style>
+
+<div class="
+  max-xl:flex
+  max-xl:flex-col
+  max-xl:px-6
+  
+  xl:flex
+  xl:px-12
+  xl:gap-7
+  xl:h-full
+"
+>
+  
+  <div class="coll">
+    
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  let coll = document.querySelector(".collapsible");
+  let content = document.querySelector(".content");
+
+  coll.addEventListener("click", function () {
+    content.classList.toggle("active");
+    coll.classList.toggle("active");
+  });
+});
+</script>
+
+<style>
+.active {
+  border-bottom-left-radius: 0rem;
+  border-bottom-right-radius: 0rem;
+  padding-bottom: 0.5rem;
+}
+
+.content.active {
+  max-height: 500px;
+  border-bottom-left-radius: 1.5rem;
+  border-bottom-right-radius: 1.5rem;
+}
+
+.collapsible.active {
+  border-bottom-left-radius: 0rem;
+  border-bottom-right-radius: 0rem;
+}
+
+.collapsible:before {
+  content: "\002B";
+}
+
+.collapsible.active:before {
+  content: "\2212";
+}
+</style>
+
+<button type="button" class="
+  collapsible
+
+  px-4
+  max-xl:py-1.5
+  w-full
+  bg-search-bg
+  rounded-3xl 
+  border-solid
+  border-black
+  text-white-50
+  text-sm
+  flex
+  justify-center
+  gap-5
+  "
+>
+  On this page
+</button>
+
+<div class="
+  content
+  
+  max-h-0
+  overflow-y-scroll
+  bg-search-bg
+  text-white-50
+  px-4
+  "
+>
+  <nav id="TableOfContents">
+  <ul>
+    <li><a href="#katex-integration-test">KaTeX Integration test</a></li>
+    <li><a href="#hello-d">Hello! :D</a></li>
+    <li><a href="#useful-resources">Useful resources</a>
+      <ul>
+        <li><a href="#neovim">(Neo)Vim</a></li>
+        <li><a href="#front-end">Front end</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+</div>
+
+
+  </div>
+
+  <div class="toc overflow-y-scroll">
+    <div class="
+  items-center
+  text-white-50
+  overflow-y-scroll
+
+  xl:items-center
+  xl:text-white-50
+  xl:overflow-y-scroll
+  "
+>
+  <nav id="TableOfContents">
+  <ul>
+    <li><a href="#katex-integration-test">KaTeX Integration test</a></li>
+    <li><a href="#hello-d">Hello! :D</a></li>
+    <li><a href="#useful-resources">Useful resources</a>
+      <ul>
+        <li><a href="#neovim">(Neo)Vim</a></li>
+        <li><a href="#front-end">Front end</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+</div>
+
+  </div>
+
+  
+  <div class="
+    prose-lg
+    prose
+    prose-maincolors
+    overflow-y-scroll
+    w-full
+
+    xl:prose-xl
+    xl:prose
+    xl:prose-maincolors
+    xl:overflow-y-scroll
+    xl:max-w-full
+    "
+  >
+    <h2 id="katex-integration-test">KaTeX Integration test</h2>
+<p>$$x = {-b \pm \sqrt{b^2-4ac} \over 2a}$$</p>
+<p>$$ \sum_{i=1}^n n = \frac{n(n+1)}{2}$$</p>
+<h2 id="hello-d">Hello! :D</h2>
+<p>My name is Brandon Jose Tenorio Noguera (pronounced <em>NO-GHE-RA</em>). I&rsquo;m a first-generation university student pursuing a degree in Computer Science at the University of Maryland, Baltimore County (UMBC)</p>
+<h2 id="useful-resources">Useful resources</h2>
+<h3 id="neovim">(Neo)Vim</h3>
+<ul>
+<li>
+<a
+  href="https://vim.rtorr.com/"
+  
+
+   
+  target="_blank"
+  
+  rel="noopener noreferrer"
+>
+  https://vim.rtorr.com/
+</a>
+</li>
+<li>
+<a
+  href="https://www.ejmastnak.com/tutorials/vim-latex/intro/"
+  
+
+   
+  target="_blank"
+  
+  rel="noopener noreferrer"
+>
+  https://www.ejmastnak.com/tutorials/vim-latex/intro/
+</a>
+</li>
+</ul>
+<h3 id="front-end">Front end</h3>
+<ul>
+<li>
+<a
+  href="https://www.realtimecolors.com/"
+  
+
+   
+  target="_blank"
+  
+  rel="noopener noreferrer"
+>
+  https://www.realtimecolors.com/
+</a>
+</li>
+<li>
+<a
+  href="https://www.fontpair.co/"
+  
+
+   
+  target="_blank"
+  
+  rel="noopener noreferrer"
+>
+  https://www.fontpair.co/
+</a>
+</li>
+<li>
+<a
+  href="https://app.haikei.app/"
+  
+
+   
+  target="_blank"
+  
+  rel="noopener noreferrer"
+>
+  https://app.haikei.app/
+</a>
+</li>
+<li>
+<a
+  href="https://omatsuri.app/"
+  
+
+   
+  target="_blank"
+  
+  rel="noopener noreferrer"
+>
+  https://omatsuri.app/
+</a>
+</li>
+<li>
+<a
+  href="https://gradient.style/"
+  
+
+   
+  target="_blank"
+  
+  rel="noopener noreferrer"
+>
+  https://gradient.style/
+</a>
+</li>
+<li>
+<a
+  href="https://icones.js.org/"
+  
+
+   
+  target="_blank"
+  
+  rel="noopener noreferrer"
+>
+  https://icones.js.org/
+</a>
+</li>
+<li>
+<a
+  href="https://www.joshwcomeau.com/shadow-palette/"
+  
+
+   
+  target="_blank"
+  
+  rel="noopener noreferrer"
+>
+  https://www.joshwcomeau.com/shadow-palette/
+</a>
+</li>
+<li>
+<a
+  href="https://realfavicongenerator.net/"
+  
+
+   
+  target="_blank"
+  
+  rel="noopener noreferrer"
+>
+  https://realfavicongenerator.net/
+</a>
+</li>
+</ul>
+
+  </div>
+
+</div>
+
+    </main>
+
+    <footer class="
+      w-full
+
+      xl:w-full
+      ">
+      <div class="
+        text-white-50
+        text-xs
+        text-center
+        py-2
+
+        xl:text-white-50
+        xl:text-xs
+        xl:text-center
+        xl:py-6
+        "
+      >
+        Copyright © 2024 Brandon Jose Tenorio Noguera
+        <br>
+        Built with
+        <a href="https://gohugo.io/" target="_blank" rel="noopener noreferrer" class="
+          xl:hover:text-blue
+          xl:hover:scale-105
+          xl:duration-150
+          xl:ease-in-out
+          "
+        >
+          Hugo
+        </a>
+      </div>
+    </footer>
+  </body>
+</html>

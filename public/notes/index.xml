@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Notes on Home</title>
+    <link>https://example.org/notes/</link>
+    <description>Recent content in Notes on Home</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 31 Dec 2023 23:22:31 -0500</lastBuildDate>
+    <atom:link href="https://example.org/notes/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>C Programming Language</title>
+      <link>https://example.org/notes/c-programming-language/</link>
+      <pubDate>Sun, 31 Dec 2023 23:22:31 -0500</pubDate>
+      <guid>https://example.org/notes/c-programming-language/</guid>
+      <description>Haven&amp;rsquo;t figured out how git submodules work yet, but as soon as I do check out my repo with the book&amp;rsquo;s exercises Sources C Programming: A Modern Approach Second Edition by K. N. King Chapter 2: C Fundamentals Chapter 2.1: A Bad Pun program #include &amp;lt;stdio.h&amp;gt; int main(void) { printf(&amp;#34;To C, or not to C: that is the question.\n&amp;#34;); return 0; } Compiling and linking ❗️ I have an M2 MacBook, and I use gcc to compile c code</description>
+    </item>
+    <item>
+      <title>Linear Algebra</title>
+      <link>https://example.org/notes/linear-algebra/</link>
+      <pubDate>Sun, 24 Dec 2023 19:34:04 -0500</pubDate>
+      <guid>https://example.org/notes/linear-algebra/</guid>
+      <description>Link to pdf file My notebook.pdf for this course Course Description </description>
+    </item>
+  </channel>
+</rss>

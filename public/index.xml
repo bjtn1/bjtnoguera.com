@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Home</title>
+    <link>https://example.org/</link>
+    <description>Recent content on Home</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 31 Dec 2023 23:22:31 -0500</lastBuildDate>
+    <atom:link href="https://example.org/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>C Programming Language</title>
+      <link>https://example.org/notes/c-programming-language/</link>
+      <pubDate>Sun, 31 Dec 2023 23:22:31 -0500</pubDate>
+      <guid>https://example.org/notes/c-programming-language/</guid>
+      <description>Haven&amp;rsquo;t figured out how git submodules work yet, but as soon as I do check out my repo with the book&amp;rsquo;s exercises Sources C Programming: A Modern Approach Second Edition by K. N. King Chapter 2: C Fundamentals Chapter 2.1: A Bad Pun program #include &amp;lt;stdio.h&amp;gt; int main(void) { printf(&amp;#34;To C, or not to C: that is the question.\n&amp;#34;); return 0; } Compiling and linking ❗️ I have an M2 MacBook, and I use gcc to compile c code</description>
+    </item>
+    <item>
+      <title>Linear Algebra</title>
+      <link>https://example.org/notes/linear-algebra/</link>
+      <pubDate>Sun, 24 Dec 2023 19:34:04 -0500</pubDate>
+      <guid>https://example.org/notes/linear-algebra/</guid>
+      <description>Link to pdf file My notebook.pdf for this course Course Description </description>
+    </item>
+    <item>
+      <title>About me</title>
+      <link>https://example.org/about/</link>
+      <pubDate>Wed, 20 Dec 2023 20:59:48 -0500</pubDate>
+      <guid>https://example.org/about/</guid>
+      <description>KaTeX Integration test $$x = {-b \pm \sqrt{b^2-4ac} \over 2a}$$&#xA;$$ \sum_{i=1}^n n = \frac{n(n+1)}{2}$$&#xA;Hello! :D My name is Brandon Jose Tenorio Noguera (pronounced NO-GHE-RA). I&amp;rsquo;m a first-generation university student pursuing a degree in Computer Science at the University of Maryland, Baltimore County (UMBC)&#xA;Useful resources (Neo)Vim https://vim.rtorr.com/ https://www.ejmastnak.com/tutorials/vim-latex/intro/ Front end https://www.realtimecolors.com/ https://www.fontpair.co/ https://app.haikei.app/ https://omatsuri.app/ https://gradient.style/ https://icones.js.org/ https://www.joshwcomeau.com/shadow-palette/ https://realfavicongenerator.net/ </description>
+    </item>
+    <item>
+      <title>Projects</title>
+      <link>https://example.org/projects/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://example.org/projects/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>
