@@ -1,4 +1,5 @@
-baseURL = "https://example.org/"
+# baseURL = "https://example.org/"
+baseURL = "https://bjtnoguera.netlify.app/"
 # This is the baseURL for running te site on github pages
 # baseURL = "https://bjtn1.github.io/bjtnoguera/"
 languageCode = "en-us"
