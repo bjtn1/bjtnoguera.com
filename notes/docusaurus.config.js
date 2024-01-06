@@ -81,7 +81,8 @@ const config = {
     },
     colorMode: {
       defaultMode: "dark",
-      respectPrefersColorScheme: true,
+      disableSwitch: true,
+      respectPrefersColorScheme: false,
     },
     // Replace with your project's social card
     image: 'img/docusaurus-social-card.jpg',
