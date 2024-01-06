@@ -117,9 +117,9 @@ const config = {
         },
       ],
     },
-    footer: {
-      style: 'dark',
-      links: [
+    // footer: {
+    //   style: 'dark',
+    //   links: [
         // I do not want anything in the footer other than the copyright mark
         // {
         //   title: 'Docs',
@@ -160,9 +160,9 @@ const config = {
         //     },
         //   ],
         // },
-      ],
-      copyright: `Copyright © ${new Date().getFullYear()} Brandon J. T. Noguera, Built with Docusaurus.`,
-    },
+      // ],
+      // copyright: `Copyright © ${new Date().getFullYear()} Brandon J. T. Noguera, Built with Docusaurus.`,
+    // },
     prism: {
       theme: prismThemes.oneLight,
       darkTheme: prismThemes.oneDark,
