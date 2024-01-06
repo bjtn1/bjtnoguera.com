@@ -107,13 +107,15 @@ int main(void) {
 ```
 
 ### Types and their size in bytes
-`int` is 2 to 4 bytes in size (most likely 4 in modern computers)
-`float` 4 bytes in size
-`double` 8 bytes
-`char` 1 byte
+| Type      | Size in bytes               |
+| --------- | --------------------------- |
+| `int`     | 2 to 4 (most likely 4)      |
+| `float`   | 4                           |
+| `double`  | 8                           |
+| `char`    | 1                           |
 
-`sizeof(some_type)` in c will return the size in bytes of some type
-> Don't worry about the `"%zu\n"` section for now.
+`sizeof(some_type)` in c will return the size in bytes of `some_type`
+> Don't worry about the `"%zu\n"` part for now.
 ```c showLineNumbers
 #include <stdio.h>
 
