@@ -36,6 +36,6 @@ p {
   color: #C8D3F5;
 }
 
-.navbar {
+.navbar, .navbar-sidebar {
   background-color: #16161e;
 }
