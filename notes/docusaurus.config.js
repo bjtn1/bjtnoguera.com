@@ -8,6 +8,9 @@ import {themes as prismThemes} from 'prism-react-renderer';
 import remarkMath from 'remark-math';
 import rehypeKatex from 'rehype-katex';
 
+const socials = require("./socials");
+
+
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: "bjtn",
@@ -48,8 +51,8 @@ const config = {
           sidebarPath: './sidebars.js',
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          // editUrl:
-          //   'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+          editUrl:
+            'https://github.com/bjtn1/bjtnoguera.com/tree/main/notes',
           remarkPlugins: [remarkMath],
           rehypePlugins: [rehypeKatex],
         },
@@ -101,68 +104,10 @@ const config = {
           position: 'left',
           label: 'Notes',
         },
-        // {
-        //   to: '/blog',
-        //   label: 'Blog',
-        //   position: 'left',
-        // },
-        {
-          href: 'https://github.com/bjtn1',
-          label: 'GitHub',
-          position: 'right',
-          logo: {
-            alt: "GithubLogo",
-            src: "img/github-svg-repo.svg"
-          }
-        },
+        ...socials,
       ],
     },
-    // footer: {
-    //   style: 'dark',
-    //   links: [
-        // I do not want anything in the footer other than the copyright mark
-        // {
-        //   title: 'Docs',
-        //   items: [
-        //     {
-        //       label: 'Tutorial',
-        //       to: '/docs/intro',
-        //     },
-        //   ],
-        // },
-        // {
-        //   title: 'Community',
-        //   items: [
-        //     {
-        //       label: 'Stack Overflow',
-        //       href: 'https://stackoverflow.com/questions/tagged/docusaurus',
-        //     },
-        //     {
-        //       label: 'Discord',
-        //       href: 'https://discordapp.com/invite/docusaurus',
-        //     },
-        //     {
-        //       label: 'Twitter',
-        //       href: 'https://twitter.com/docusaurus',
-        //     },
-        //   ],
-        // },
-        // {
-        //   title: 'More',
-        //   items: [
-        //     {
-        //       label: 'Blog',
-        //       to: '/blog',
-        //     },
-        //     {
-        //       label: 'GitHub',
-        //       href: 'https://github.com/facebook/docusaurus',
-        //     },
-        //   ],
-        // },
-      // ],
-      // copyright: `Copyright © ${new Date().getFullYear()} Brandon J. T. Noguera, Built with Docusaurus.`,
-    // },
+
     prism: {
       theme: prismThemes.oneLight,
       darkTheme: prismThemes.oneDark,

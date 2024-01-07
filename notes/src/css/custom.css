@@ -39,3 +39,19 @@ p {
 .navbar, .navbar-sidebar {
   background-color: #16161e;
 }
+
+/* Taken from https://github.com/LunarVim/lunarvim.org/blob/master/src/css/custom.css */
+.social {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 0;
+}
+
+.social path {
+  fill: var(--primary-fg);
+}
+
+.social:hover path {
+  fill: var(--ifm-color-primary);
+}
