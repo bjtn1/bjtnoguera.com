@@ -77,6 +77,86 @@ div.setAttribute("id", "theDiv")
 // Returns the id attribute of div
 div.getAttribute("id")
 
-
 ```
 
+#### Removing attributes
+```js showLineNumbers
+// Removes specified attribute
+div.removeAttribute("id");
+```
+
+#### Adding and removing a class to/from a tag
+```js showLineNumbers
+div.classList.add("new");
+
+div.classList.remove("new");
+
+// Adds "active" class to div if div doesn't have a class called "active"
+// Otherwise removes class "active" from div
+div.classList.toggle("active");
+```
+
+:::note
+It is standard practice to use `element.classList.toggle("class_name")`
+:::
+
+#### Adding text to an element
+```js showLineNumbers
+// Adds "Hello world" to this div
+div.textContent = "Hello world"
+
+// Gets rendered as
+// <div>Hello world</div>
+```
+:::warning
+Avoid using `element.innerHTML` as it poses security risks. Use `textContent` whenever possible
+:::
+
+### Example usage
+```html showLineNumbers
+<!-- your HTML file: -->
+<body>
+  <h1>
+    THE TITLE OF YOUR WEBPAGE
+  </h1>
+  <div id="container"></div>
+</body>
+```
+
+```js showLineNumbers
+// your JavaScript file
+const container = document.querySelector('#container');
+
+const content = document.createElement('div');
+content.classList.add('content');
+content.textContent = 'This is the glorious text-content!';
+
+container.appendChild(content);
+```
+
+Doing all of that results in this
+```html showLineNumbers
+<!-- The DOM -->
+<body>
+  <h1>
+    THE TITLE OF YOUR WEBPAGE
+  </h1>
+  <div id="container">
+  	<div class="content">
+      This is the glorious text-content!
+    </div>
+  </div>
+</body>
+```
+
+The HTML file ***will not*** change. 
+
+The JS DOM manipulations happen ***after*** the HTML file has been rendered
+
+:::note
+Include your js file in your html like this, so that the js file runs ***after*** the DOM has been rendered
+```html showLineNumbers
+<head>
+  <script src="js-file.js" defer></script>
+</head>
+```
