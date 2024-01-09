@@ -30,11 +30,11 @@ const div = document.createElement("div");
 ### Adding an element to the DOM
 ```js showLineNumbers
 // Syntax:
-// parent_node.appendChild(child_node);
+parent_node.appendChild(child_node);
 // Resulting tree will look like...
 // parent_node -> child_node
 
-// parent_node.insertBefore(new_node, reference_node);
+parent_node.insertBefore(new_node, reference_node);
 // Resulting tree will look like:
 // parent_node -> new_node -> reference_node
 ```
@@ -69,7 +69,7 @@ div.style.background-color = "blue";
 ```
 :::
 
-#### Editing attributes
+### Editing attributes
 ```js showLineNumbers
 // This changes the id attribute of div element to "theDiv" if the id attribute was set, otherwise it creates it
 div.setAttribute("id", "theDiv")
@@ -79,13 +79,13 @@ div.getAttribute("id")
 
 ```
 
-#### Removing attributes
+### Removing attributes
 ```js showLineNumbers
 // Removes specified attribute
 div.removeAttribute("id");
 ```
 
-#### Adding and removing a class to/from a tag
+### Adding and removing a class to/from a tag
 ```js showLineNumbers
 div.classList.add("new");
 
@@ -100,7 +100,7 @@ div.classList.toggle("active");
 It is standard practice to use `element.classList.toggle("class_name")`
 :::
 
-#### Adding text to an element
+### Adding text to an element
 ```js showLineNumbers
 // Adds "Hello world" to this div
 div.textContent = "Hello world"
@@ -160,3 +160,63 @@ Include your js file in your html like this, so that the js file runs ***after**
   <script src="js-file.js" defer></script>
 </head>
 ```
+:::
+
+### Events
+
+Events are mouse clicks or key presses that occur on the page that we can track with some js code.
+
+There are three ways to track events
+
+#### `onclick` attribute in HTML file
+```js showLineNumbers
+// Creates a button with the event "onclick" that alerts the user when the button get clicked with a pop up that says "Hello world"
+<button onclick="alert('Hello World')">Click Me</button>
+```
+:::note
+You can only set one `onclick` property per DOM element
+:::
+
+#### `onclick` attribute in Javascript file
+```html showLineNumbers
+<!-- the HTML file -->
+<button id="btn">Click Me</button>
+```
+
+```js showLineNumbers
+// the JavaScript file
+const btn = document.querySelector('#btn');
+btn.onclick = () => alert("Hello World");
+```
+:::note
+Like int the previous method, each DOM element can only have 1 `onclick` property
+:::
+
+#### `addEventListener` in Javascrupt file (best method)
+```html showLineNumbers
+<!-- the HTML file -->
+<button id="btn">Click Me Too</button>
+```
+
+```js showLineNumbers
+// the JavaScript file
+const btn = document.querySelector('#btn');
+btn.addEventListener('click', () => {
+  alert("Hello World");
+});
+```
+
+#### Getting info about the event in `addEventListener`
+```js showLineNumbers
+btn.addEventListener('click', function (e) {
+  console.log(e);
+});
+
+```
+:::note
+`function(e)` is a [callback](https://dev.to/i3uckwheat/understanding-callbacks-2o9e) function
+
+All this means is that thru the `e` variable, we can get info about the event that trigered this listener
+:::
+
+# STOPPED AT [Attaching listeners to groups of nodes](https://www.theodinproject.com/lessons/foundations-dom-manipulation-and-events)

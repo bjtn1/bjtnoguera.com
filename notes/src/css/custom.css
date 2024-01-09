@@ -17,6 +17,21 @@
   --ifm-color-primary-lightest: #3cad6e;
   --ifm-code-font-size: 95%;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+
+  /* Tokyonight-night theme */
+  --black: #16161e;
+  --search-bg: rgba(255, 255, 255, 0.08);
+  --white: #c8d3f5;
+  --white-50: #c8d3f580;
+  --blue: #82aaff;
+  --cyan: #86e1fc;
+  --purple: #fca7ea;
+  --magenta: #c099ff;
+  --orange: #ff966c;
+  --yellow: #ffc777;
+  --green: #c3e88d;
+  --red: #ff757f;
+  --teal: #4fd6be;
 }
 
 /* For readability concerns, you should choose a lighter palette in dark mode. */
@@ -33,11 +48,15 @@
 }
 
 p {
-  color: #C8D3F5;
+  color: var(--white);
+}
+
+code {
+  color: var(--yellow);
 }
 
 .navbar, .navbar-sidebar {
-  background-color: #16161e;
+  background-color: var(--black);
 }
 
 /* Taken from https://github.com/LunarVim/lunarvim.org/blob/master/src/css/custom.css */
