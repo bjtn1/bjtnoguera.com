@@ -217,5 +217,32 @@ btn.addEventListener('click', function (e) {
 All this means is that thru the `e` variable, we can get info about the event that trigered this listener
 :::
 
-# STOPPED AT [Attaching listeners to groups of nodes](https://www.theodinproject.com/lessons/foundations-dom-manipulation-and-events)
+### How to add listeners to a group of nodes with `querySelectorAll("selector")`    
+```html showLineNumbers
+<div id="container">
+    <button id="1">Click Me</button>
+    <button id="2">Click Me</button>
+    <button id="3">Click Me</button>
+</div>
+```
+
+```js showLineNumbers
+// buttons is a node list. It looks and acts much like an array.
+const buttons = document.querySelectorAll('button');
+
+// we use the .forEach method to iterate through each button
+buttons.forEach((button) => {
+
+  // and for each one we add a 'click' listener
+  button.addEventListener('click', () => {
+    alert(button.id);
+  });
+});
+```
+
+> Complete list of events can be found [here](https://www.w3schools.com/jsref/dom_obj_event.asp)
+
+## Assignment
+1. Complete [this challenge](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Client-side_web_APIs/Manipulating_documents#active_learning_a_dynamic_shopping_list)
+2. Do the first 2 sections of [this JavaScript DOM Tutorial](https://www.javascripttutorial.net/javascript-dom/)
 
