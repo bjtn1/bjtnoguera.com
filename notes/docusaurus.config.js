@@ -65,6 +65,7 @@ const config = {
   ],
 
   stylesheets: [
+    // This is for KaTeX
     {
       href: 'https://cdn.jsdelivr.net/npm/katex@0.13.24/dist/katex.min.css',
       type: 'text/css',
@@ -77,6 +78,14 @@ const config = {
   themeConfig:
   /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
   ({
+    announcementBar: {
+      id: 'announcement',
+      content:
+        'Search Bar by Algolia has been added, but it does not work yet. An announcement will come out when I get it working',
+      backgroundColor: '#16161e',
+      textColor: '#c099ff',
+      isCloseable: true,
+    },
     algolia: {
       // The application ID provided by Algolia
       appId: 'WY21U7E38S',

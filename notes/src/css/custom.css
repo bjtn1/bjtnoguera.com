@@ -74,3 +74,8 @@ code {
 .social:hover path {
   fill: var(--ifm-color-primary);
 }
+
+/* Closing symbol in the announcement bar */
+.close {
+  color: var(--magenta);
+}
