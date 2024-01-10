@@ -1,16 +1,14 @@
-# Web Development
+---
+description: "Learn about the DOM, how to manipulate it, and how to interact with it"
+---
 
-## Sources
-[The Odin Project](http://www.theodinproject.com/)
-:::note
-This is a ***very*** lengthy curriculum, thus each section will be linked to the specific part that it relates to
-:::
+# The DOM (Document Object Model)
 
-## [The DOM (Document Object Model)](https://www.theodinproject.com/lessons/foundations-dom-manipulation-and-events)
+> Source https://www.theodinproject.com/lessons/foundations-dom-manipulation-and-events
 
 The DOM is just like a big ol' tree from CS. Each node is an html tag like `div` or `h1`
 
-### Selecting a node in the DOM
+## Selecting a node in the DOM
 ```js showLineNumbers
 // General syntax:
 // element.querySelector(selector)
@@ -18,7 +16,7 @@ The DOM is just like a big ol' tree from CS. Each node is an html tag like `div`
 const div = document.querySelector("div");
 ```
 
-### Creating an element in the DOM
+## Creating an element in the DOM
 ```js showLineNumbers
 // Syntax:
 // document.createElement(tag_name, [options])
@@ -27,7 +25,7 @@ const div = document.querySelector("div");
 const div = document.createElement("div");
 ```
 
-### Adding an element to the DOM
+## Adding an element to the DOM
 ```js showLineNumbers
 // Syntax:
 parent_node.appendChild(child_node);
@@ -39,7 +37,7 @@ parent_node.insertBefore(new_node, reference_node);
 // parent_node -> new_node -> reference_node
 ```
 
-### Altering elements in the DOM
+## Altering elements in the DOM
 ```js showLineNumbers
 // Create an element to be altered later
 const div = document.createElement("div");
@@ -69,7 +67,7 @@ div.style.background-color = "blue";
 ```
 :::
 
-### Editing attributes
+## Editing attributes
 ```js showLineNumbers
 // This changes the id attribute of div element to "theDiv" if the id attribute was set, otherwise it creates it
 div.setAttribute("id", "theDiv")
@@ -79,13 +77,13 @@ div.getAttribute("id")
 
 ```
 
-### Removing attributes
+## Removing attributes
 ```js showLineNumbers
 // Removes specified attribute
 div.removeAttribute("id");
 ```
 
-### Adding and removing a class to/from a tag
+## Adding and removing a class to/from a tag
 ```js showLineNumbers
 div.classList.add("new");
 
@@ -100,7 +98,7 @@ div.classList.toggle("active");
 It is standard practice to use `element.classList.toggle("class_name")`
 :::
 
-### Adding text to an element
+## Adding text to an element
 ```js showLineNumbers
 // Adds "Hello world" to this div
 div.textContent = "Hello world"
@@ -112,7 +110,7 @@ div.textContent = "Hello world"
 Avoid using `element.innerHTML` as it poses security risks. Use `textContent` whenever possible
 :::
 
-### Example usage
+## Example usage
 ```html showLineNumbers
 <!-- your HTML file: -->
 <body>
@@ -162,13 +160,13 @@ Include your js file in your html like this, so that the js file runs ***after**
 ```
 :::
 
-### Events
+## Events
 
 Events are mouse clicks or key presses that occur on the page that we can track with some js code.
 
 There are three ways to track events
 
-#### `onclick` attribute in HTML file
+### `onclick` attribute in HTML file
 ```js showLineNumbers
 // Creates a button with the event "onclick" that alerts the user when the button get clicked with a pop up that says "Hello world"
 <button onclick="alert('Hello World')">Click Me</button>
@@ -177,7 +175,7 @@ There are three ways to track events
 You can only set one `onclick` property per DOM element
 :::
 
-#### `onclick` attribute in Javascript file
+### `onclick` attribute in Javascript file
 ```html showLineNumbers
 <!-- the HTML file -->
 <button id="btn">Click Me</button>
@@ -192,7 +190,7 @@ btn.onclick = () => alert("Hello World");
 Like int the previous method, each DOM element can only have 1 `onclick` property
 :::
 
-#### `addEventListener` in Javascrupt file (best method)
+### `addEventListener` in Javascrupt file (best method)
 ```html showLineNumbers
 <!-- the HTML file -->
 <button id="btn">Click Me Too</button>
@@ -206,7 +204,7 @@ btn.addEventListener('click', () => {
 });
 ```
 
-#### Getting info about the event in `addEventListener`
+### Getting info about the event in `addEventListener`
 ```js showLineNumbers
 btn.addEventListener('click', function (e) {
   console.log(e);
@@ -220,3 +218,4 @@ All this means is that thru the `e` variable, we can get info about the event th
 :::
 
 # STOPPED AT [Attaching listeners to groups of nodes](https://www.theodinproject.com/lessons/foundations-dom-manipulation-and-events)
+

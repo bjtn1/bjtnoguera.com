@@ -1,12 +1,11 @@
-# C Programming Language
+---
+description: "Learn about the fundamentals of the C programming language"
+---
 
-> Haven't figured out how git submodules work yet, but as soon as I do check out [my repo with the book's exercises](https://github.com/bjtn1/c-programming-a-modern-approach)
+# Chapter 2: C fundamentals
 
-# Sources
-[C Programming: A Modern Approach Second Edition by K. N. King](http://knking.com/books/c2/index.html)
+> Here's the [link to my repo containing the exercises/projects for this chapter](https://github.com/bjtn1/c-programming-a-modern-approach)
 
-
-# Chapter 2: C Fundamentals
 ## Chapter 2.1: A Bad Pun program
 ```c showLineNumbers
 #include <stdio.h>
@@ -162,3 +161,4 @@ int main(void) {
 
 ## Chapter 2.5: Reading input
 # STOPPED AT PAGE 47
+
