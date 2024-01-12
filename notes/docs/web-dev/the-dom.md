@@ -249,3 +249,16 @@ buttons.forEach((button) => {
 1. Complete [this challenge](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Client-side_web_APIs/Manipulating_documents#active_learning_a_dynamic_shopping_list)
 2. Do the first 2 sections of [this JavaScript DOM Tutorial](https://www.javascripttutorial.net/javascript-dom/), then do the 7th section
 
+## Event flows
+
+Event flows describe how events are received on the page
+
+### Event bubbling
+
+This means that the event triggers at the most specific (innermost) target element, and then triggers its ancestors until reaching the root of the DOM tree
+
+### Event capturing
+
+This is the opposite of event bubbling.
+
+The event triggers at the root of the DOM tree, and travels down to the most specific triggering element
