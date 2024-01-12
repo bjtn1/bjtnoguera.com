@@ -131,6 +131,9 @@ content.textContent = 'This is the glorious text-content!';
 
 container.appendChild(content);
 ```
+:::note
+If you wanna get/set the text content of an `input` tag, use `input.value`
+:::
 
 Doing all of that results in this
 ```html showLineNumbers
@@ -244,5 +247,5 @@ buttons.forEach((button) => {
 
 ## Assignment
 1. Complete [this challenge](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Client-side_web_APIs/Manipulating_documents#active_learning_a_dynamic_shopping_list)
-2. Do the first 2 sections of [this JavaScript DOM Tutorial](https://www.javascripttutorial.net/javascript-dom/)
+2. Do the first 2 sections of [this JavaScript DOM Tutorial](https://www.javascripttutorial.net/javascript-dom/), then do the 7th section
 
