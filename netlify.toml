@@ -1,7 +1,8 @@
 [build]
   base = "./"
-  publish = "./dist"
-  command = "mkdir -p ./dist/ && mkdir -p ./dist/notes/ && yarn install && hugo && mv ./public/* ./dist/ && cd ./notes/ && yarn install && yarn build && mv ./build/* ../dist/notes"
+  publish = "./public/"
+  command = "hugo"
+  # command = "mkdir -p ./dist/ && mkdir -p ./dist/notes/ && yarn install && hugo && mv ./public/* ./dist/ && cd ./notes/ && yarn install && yarn build && mv ./build/* ../dist/notes"
 
 [build.environment]
   HUGO_VERSION = "0.121.2"
