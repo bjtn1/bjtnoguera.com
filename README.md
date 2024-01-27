@@ -1,5 +1,6 @@
 [![Netlify Status](https://api.netlify.com/api/v1/badges/d0b26c06-19e5-44a3-a65c-ee0f402d6d8a/deploy-status)](https://app.netlify.com/sites/bjtnoguera/deploys)
 
+> This has to be udpated
 <!-- TOC start (generated with https://github.com/derlin/bitdowntoc) -->
 # Table Of Contents
 - [Motivations for the site](#motivations-for-the-site)
