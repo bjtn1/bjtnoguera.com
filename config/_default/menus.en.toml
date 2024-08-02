@@ -20,10 +20,12 @@ name = "projects"
 pageRef = "projects"
 weight = 2
 
-[[main]]
-  name = "music"
-  pageRef = "music"
-  weight = 3
+# FIX
+# uncomment this when this is all setup
+# [[main]]
+#   name = "music"
+#   pageRef = "music"
+#   weight = 3
 
 #[[main]]
 #  name = "Parent"
