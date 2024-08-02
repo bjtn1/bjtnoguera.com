@@ -16,8 +16,8 @@ title = "bjtn"
  [author]
    name = "Brandon Jose Tenorio Noguera"
    image = "pfp.jpg"
-   headline = "Musician & aspiring software engineer"
-   bio = "Musician & aspiring software engineer"
+   headline = "Musician, aspiring software engineer, and Mega Man fan"
+   bio = "Musician, aspiring software engineer, and Mega Man fan"
   links = [
     { email = "bjtn01.exit148@slmail.me" },
 #     { link = "https://link-to-some-website.com/" },

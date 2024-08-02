@@ -13,14 +13,17 @@
 [[main]]
   name = "resume"
   pageRef = "resume"
+  weight = 1
+
+[[main]]
+name = "projects"
+pageRef = "projects"
+weight = 2
 
 [[main]]
   name = "music"
   pageRef = "music"
-
-[[main]]
-  name = "projects"
-  pageRef = "projects"
+  weight = 3
 
 #[[main]]
 #  name = "Parent"
