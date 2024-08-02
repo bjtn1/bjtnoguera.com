@@ -6,3 +6,6 @@
     - [ ] Find school projects
     - [ ] Add description of those projects
     - [ ] Add a "send email to me to view these projects"
+
+# Other website link (while I wait for DNS verification)
+# https://bjtnoguera.com
