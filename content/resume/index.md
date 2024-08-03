@@ -15,7 +15,7 @@ title: "resume"
 {{< timeline >}}
 
 {{< timelineItem
-    icon="code"
+    icon="star"
     header="BSc in Computer Science"
     badge="Aug 2022 - Dec 2024"
     subheader="University of Maryland, Baltimore County (UMBC)"
@@ -45,9 +45,9 @@ Courses taken:
 
 
 {{< timelineItem
-    icon="code"
+    icon=""
     header="A.A. in Computer Science"
-    badge="Aug 2022 - Dec 2024"
+    badge="Aug 2018 - May 2022"
     subheader="Montgomery College"
 >}}
 Courses taken:
