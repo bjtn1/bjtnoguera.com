@@ -16,9 +16,15 @@
   weight = 1
 
 [[main]]
-name = "projects"
-pageRef = "projects"
-weight = 2
+  name = "projects"
+  pageRef = "projects"
+  weight = 2
+
+[[main]]
+  name = "now"
+  pageRef = "now"
+  weight = 3
+
 
 # FIX
 # uncomment this when this is all setup
