@@ -147,3 +147,43 @@ Responsibilities:
 {{< /timelineItem >}}
 
 {{< /timeline >}}
+
+# Skills
+
+{{< typeit 
+  tag=h3
+  lifeLike=true
+>}}
+"Insert deep quote about skills."
+{{< /typeit >}}
+
+## Programming and software
+
+- HTML
+- CSS
+- Javascript
+- Python
+- Java
+- C++
+- C
+- Rust
+- LaTeX
+- Neovim
+- Lua
+- Bash
+- Tailwind CSS
+- ArcGIS
+- PHP
+
+## Operating systems
+
+- Kali Linux
+- MacOS
+- Windows 10/11
+
+## Foreign languages
+
+- Spanish (native)
+- English (fluent)
+- French (limited working proficiency)
+- American Sign Language (limited working proficiency)
