@@ -130,7 +130,7 @@ highlightCurrentMenuArea = true
   identifier = "bjtn01"
   globalWidget = true
   globalWidgetMessage = ""
-  globalWidgetColor = "#c6ce84"
+  globalWidgetColor = "#93c5fd"
   globalWidgetPosition = "Right"
 
 [verification]
