@@ -1,6 +1,9 @@
 ---
 title: "projects"
 ---
+<!-- This exists so that theres a gap between the table of contents and the heading on smaller screens -->
+<br>
+
 # Public projects
 
 ## Etch-a-sketch
@@ -36,7 +39,7 @@ If you'd like to view the repo for any one of these projects, send me an email.
 
 ## Password checker
 {{< button href="mailto:bjtn01.exit148@slmail.me" target="_self" >}}
-Request access to this repository
+Request access
 {{< /button >}}
 - A Java application that checks the strength of passwords
 - Languages used:
@@ -44,7 +47,7 @@ Request access to this repository
 
 ## Multi cycle pipeline simulator
 {{< button href="mailto:bjtn01.exit148@slmail.me" target="_self" >}}
-Request access to this repository
+Request access
 {{< /button >}}
 - A Python application that takes in a text file with MIPS instructions and displays the stages of each instruction
 - Languages used:
@@ -52,7 +55,7 @@ Request access to this repository
 
 ## RSA private/public key pair generator
 {{< button href="mailto:bjtn01.exit148@slmail.me" target="_self" >}}
-Request access to this repository
+Request access
 {{< /button >}}
 - A Python application that implements portions of the RSA algorithm used for generating public/private keypairs, as well as encryption, decryption, and signing.
 - Languages used:
@@ -60,7 +63,7 @@ Request access to this repository
 
 ## Vulnerable VM exploit script
 {{< button href="mailto:bjtn01.exit148@slmail.me" target="_self" >}}
-Request access to this repository
+Request access
 {{< /button >}}
 - A Python script that takes advamtage of an exploit in a vulnerable VM, and gains root privileges
 - Languages used:
@@ -68,7 +71,7 @@ Request access to this repository
 
 ## Password cracker
 {{< button href="mailto:bjtn01.exit148@slmail.me" target="_self" >}}
-Request access to this repository
+Request access
 {{< /button >}}
 - A Python script that cracks passwords using a rainbow table generated from the RockYou wordlist.
 - Languages used:
@@ -76,7 +79,7 @@ Request access to this repository
 
 ## RSA key cracker bingo
 {{< button href="mailto:bjtn01.exit148@slmail.me" target="_self" >}}
-Request access to this repository
+Request access
 {{< /button >}}
 - A Python script that uses Pollards Rho integer factorization algorithm to crack RSA keys
 - Languages used:

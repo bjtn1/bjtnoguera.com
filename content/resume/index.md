@@ -1,6 +1,8 @@
 ---
 title: "resume"
 ---
+<!-- This exists so that theres a gap between the table of contents and the heading on smaller screens -->
+<br>
 
 # Education
 
