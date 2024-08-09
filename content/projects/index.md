@@ -36,7 +36,7 @@ If you'd like to view the repo for any one of these projects, send me an email.
 
 ## Password checker
 {{< button href="mailto:bjtn01.exit148@slmail.me" target="_self" >}}
-Send email to view this project's Github repository
+Request access to this repository
 {{< /button >}}
 - A Java application that checks the strength of passwords
 - Languages used:
@@ -44,7 +44,7 @@ Send email to view this project's Github repository
 
 ## Multi cycle pipeline simulator
 {{< button href="mailto:bjtn01.exit148@slmail.me" target="_self" >}}
-Send email to view this project's Github repository
+Request access to this repository
 {{< /button >}}
 - A Python application that takes in a text file with MIPS instructions and displays the stages of each instruction
 - Languages used:
@@ -52,7 +52,7 @@ Send email to view this project's Github repository
 
 ## RSA private/public key pair generator
 {{< button href="mailto:bjtn01.exit148@slmail.me" target="_self" >}}
-Send email to view this project's Github repository
+Request access to this repository
 {{< /button >}}
 - A Python application that implements portions of the RSA algorithm used for generating public/private keypairs, as well as encryption, decryption, and signing.
 - Languages used:
@@ -60,7 +60,7 @@ Send email to view this project's Github repository
 
 ## Vulnerable VM exploit script
 {{< button href="mailto:bjtn01.exit148@slmail.me" target="_self" >}}
-Send email to view this project's Github repository
+Request access to this repository
 {{< /button >}}
 - A Python script that takes advamtage of an exploit in a vulnerable VM, and gains root privileges
 - Languages used:
@@ -68,7 +68,7 @@ Send email to view this project's Github repository
 
 ## Password cracker
 {{< button href="mailto:bjtn01.exit148@slmail.me" target="_self" >}}
-Send email to view this project's Github repository
+Request access to this repository
 {{< /button >}}
 - A Python script that cracks passwords using a rainbow table generated from the RockYou wordlist.
 - Languages used:
@@ -76,7 +76,7 @@ Send email to view this project's Github repository
 
 ## RSA key cracker bingo
 {{< button href="mailto:bjtn01.exit148@slmail.me" target="_self" >}}
-Send email to view this project's Github repository
+Request access to this repository
 {{< /button >}}
 - A Python script that uses Pollards Rho integer factorization algorithm to crack RSA keys
 - Languages used:
@@ -88,7 +88,8 @@ Send email to view this project's Github repository
 1. TODO
     - Find school projects
         - Put all the projecst from classes before spring 2023
-        - Add fall 2024
+        - Add fall 2023
+        - Add badges for topics that each project covered
     - Add description of those projects
     - Add a "send email to me to view these projects"
 
