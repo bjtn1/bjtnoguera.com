@@ -1,11 +1,8 @@
 ---
 title: "now"
 ---
-
-# What I'm working on right now
-
 {{< button href="https://sive.rs/nowff" target="_self" >}}
-What is this?
+What is this page for?
 {{< /button >}}
 <br>
 
