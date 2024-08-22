@@ -159,15 +159,15 @@ Responsibilities:
 "Insert deep quote about skills."
 {{< /typeit >}}
 
-## Programming and software
+## Programming and software (from most to least knowledgeable)
 
-- HTML
-- CSS
-- Javascript
 - Python
 - Java
-- C++
 - C
+- C++
+- Javascript
+- HTML
+- CSS
 - Rust
 - LaTeX
 - Neovim
@@ -182,6 +182,7 @@ Responsibilities:
 - Kali Linux
 - MacOS
 - Windows 10/11
+- Debian
 
 ## Foreign languages
 
