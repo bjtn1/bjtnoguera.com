@@ -38,7 +38,7 @@ If you'd like to view the repo for any one of these projects, send me an email.
 {{< /alert >}}
 
 ## Password checker
-{{< button href="mailto:bjtn01.exit148@slmail.me" target="_self" >}}
+{{< button href="mailto:204_cmsc_project_01@bjtnoguera.com" target="_self" >}}
 Request access
 {{< /button >}}
 - A Java application that checks the strength of passwords
@@ -46,7 +46,7 @@ Request access
     - Java
 
 ## Multi cycle pipeline simulator
-{{< button href="mailto:bjtn01.exit148@slmail.me" target="_self" >}}
+{{< button href="mailto:411_cmsc_final_project@bjtnoguera.com" target="_self" >}}
 Request access
 {{< /button >}}
 - A Python application that takes in a text file with MIPS instructions and displays the stages of each instruction
@@ -54,7 +54,7 @@ Request access
     - Python
 
 ## RSA private/public key pair generator
-{{< button href="mailto:bjtn01.exit148@slmail.me" target="_self" >}}
+{{< button href="mailto:426_cmsc_hw_01@bjtnoguera.com" target="_self" >}}
 Request access
 {{< /button >}}
 - A Python application that implements portions of the RSA algorithm used for generating public/private keypairs, as well as encryption, decryption, and signing.
@@ -62,7 +62,7 @@ Request access
     - Python
 
 ## Vulnerable VM exploit script
-{{< button href="mailto:bjtn01.exit148@slmail.me" target="_self" >}}
+{{< button href="mailto:426_cmsc_hw_04@bjtnoguera.com" target="_self" >}}
 Request access
 {{< /button >}}
 - A Python script that takes advamtage of an exploit in a vulnerable VM, and gains root privileges
@@ -70,7 +70,7 @@ Request access
     - Python
 
 ## Password cracker
-{{< button href="mailto:bjtn01.exit148@slmail.me" target="_self" >}}
+{{< button href="mailto:426_cmsc_hw_03@bjtnoguera.com" target="_self" >}}
 Request access
 {{< /button >}}
 - A Python script that cracks passwords using a rainbow table generated from the RockYou wordlist.
@@ -78,7 +78,7 @@ Request access
     - Python
 
 ## RSA key cracker bingo
-{{< button href="mailto:bjtn01.exit148@slmail.me" target="_self" >}}
+{{< button href="mailto:426_cmsc_participation_01@bjtnoguera.com" target="_self" >}}
 Request access
 {{< /button >}}
 - A Python script that uses Pollards Rho integer factorization algorithm to crack RSA keys
@@ -88,6 +88,7 @@ Request access
 
 
 
+<!--
 1. TODO
     - Find school projects
         - Put all the projecst from classes before spring 2023
@@ -95,4 +96,4 @@ Request access
         - Add badges for topics that each project covered
     - Add description of those projects
     - Add a "send email to me to view these projects"
-
+-->
