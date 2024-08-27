@@ -32,9 +32,7 @@ title: "projects"
 # Private projects
 
 {{< alert icon="fire" cardColor="#e63946" iconColor="#1d3557" textColor="#f1faee" >}}
-Under the Academic Integrity clause of my universities, I am not allowed to upload these projects to a public Github repo.
-Access to view these projects must be granted on a case-by-case basis by me.
-If you'd like to view the repo for any one of these projects, send me an email.
+Permission to view these projects must be granted on a case-by-case basis by me via email
 {{< /alert >}}
 
 ## Password checker
@@ -42,7 +40,7 @@ If you'd like to view the repo for any one of these projects, send me an email.
 Request access
 {{< /button >}}
 - A Java application that checks the strength of passwords
-- Languages used:
+- Technologies used:
     - Java
 
 ## Multi cycle pipeline simulator
@@ -50,7 +48,7 @@ Request access
 Request access
 {{< /button >}}
 - A Python application that takes in a text file with MIPS instructions and displays the stages of each instruction
-- Languages used:
+- Technologies used:
     - Python
 
 ## RSA private/public key pair generator
@@ -58,7 +56,7 @@ Request access
 Request access
 {{< /button >}}
 - A Python application that implements portions of the RSA algorithm used for generating public/private keypairs, as well as encryption, decryption, and signing.
-- Languages used:
+- Technologies used:
     - Python
 
 ## Vulnerable VM exploit script
@@ -66,7 +64,7 @@ Request access
 Request access
 {{< /button >}}
 - A Python script that takes advamtage of an exploit in a vulnerable VM, and gains root privileges
-- Languages used:
+- Technologies used:
     - Python
 
 ## Password cracker
@@ -74,7 +72,7 @@ Request access
 Request access
 {{< /button >}}
 - A Python script that cracks passwords using a rainbow table generated from the RockYou wordlist.
-- Languages used:
+- Technologies used:
     - Python
 
 ## RSA key cracker bingo
@@ -82,10 +80,44 @@ Request access
 Request access
 {{< /button >}}
 - A Python script that uses Pollards Rho integer factorization algorithm to crack RSA keys
-- Languages used:
+- Technologies used:
     - Python
 
+## Halloween custome review classification
+{{< button href="mailto:478_cmsc_hw_0@bjtnoguera.com" target="_self" >}}
+Request access
+{{< /button >}}
+- A Jupyter Notebook that uses Naive Bayes for sentiment analysis of Halloween costume reviews from Amazon
+- Technologies used:
+    - Python
+    - Scikit Learn
 
+## Iris classification
+{{< button href="mailto:478_cmsc_hw_1@bjtnoguera.com" target="_self" >}}
+Request access
+{{< /button >}}
+- A Jupyter Notebook that uses a Decision Tree (DT) to classify iris flowers by common morphological features
+- Technologies used:
+    - Python
+    - Scikit Learn
+
+## Classification for facial recognition
+{{< button href="mailto:478_cmsc_hw_2@bjtnoguera.com" target="_self" >}}
+Request access
+{{< /button >}}
+- A Jupyter Notebook that uses Support Vector Machine (SVM) classification for facial recognition of famous people from the Labeled Faces in the Wild (LFW) dataset
+- Technologies used:
+    - Python
+    - Scikit Learn
+
+## Classification of breast tissue cells for cancer
+{{< button href="mailto:478_cmsc_hw_3@bjtnoguera.com" target="_self" >}}
+Request access
+{{< /button >}}
+- A Jupyter Notebook that uses Random Forests (RF) to classify breast tissue cells as either benign or malignant
+- Technologies used:
+    - Python
+    - Scikit Learn
 
 
 <!--
