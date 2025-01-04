@@ -1,3 +1,4 @@
-baseURL = 'https://bjtnoguera.com/'
+# baseURL = 'https://bjtnoguera.com/'
+baseURL = 'https://bjtn.me/'
 languageCode = 'en-us'
 title = 'Brandon J. T. Noguera'
